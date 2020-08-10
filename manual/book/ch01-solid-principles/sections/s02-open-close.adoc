@@ -1,0 +1,8 @@
+=== Open Close Principle
+
+(((Open Close Principle)))
+Open Close Principle introduction
+
+(((Open Close Principle,do one thing)))
+concept
+

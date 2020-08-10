@@ -1,0 +1,6 @@
+[preface]
+== Introduction
+
+Introduction may be a chapter wise detail outline of book.
+
+Let's get started.

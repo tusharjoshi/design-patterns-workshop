@@ -1,0 +1,16 @@
+[references]
+== References
+
+Abran, Alain, editor. Guide to the Software Engineering Body of Knowledge, 2004 Version: SWEBOK ; a Project of the IEEE Computer Society Professional Practices Committee. IEEE Computer Society, 2004.
+
+Freeman, Eric, et al., editors. Head First Design Patterns. O’Reilly, 2004.
+
+Gamma, Erich, editor. Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley, 1995.
+
+Sarcar, Vaskaran. Java Design Patterns: A Tour of 23 Gang of Four Design Patterns in Java. Apress, 2016.
+
+Timms, Simon. Mastering Javascript Design Patterns. Packt Publishing, 2014.
+
+Martin, Robert C., editor. Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall, 2009.
+
+Hall, Gary McLean. Adaptive Code: Agile Coding with Design Patterns and SOLID Principles. Second edition, Microsoft Press, 2017.

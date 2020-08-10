@@ -1,0 +1,8 @@
+=== Single Responsibility Principle
+
+(((Single Responsibility Principle)))
+Single Responsibility Principle introduction
+
+(((Single Responsibility Principle,do one thing)))
+Do one thing concept
+

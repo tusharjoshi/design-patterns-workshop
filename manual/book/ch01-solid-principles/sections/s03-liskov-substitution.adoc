@@ -1,0 +1,8 @@
+=== Liskov Substitution Principle
+
+(((Liskov Substitution Principle)))
+Liskov Substitution Principle introduction
+
+(((Liskov Substitution Principle,do one thing)))
+concept
+

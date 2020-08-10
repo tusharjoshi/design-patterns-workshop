@@ -1,0 +1,90 @@
+[[ch02-singleton]]
+== Singleton Pattern
+
+=== GoF Definition
+
+Ensure a class only has one instance, and provide a global point of access to it.
+
+=== Eager Initialization
+
+(((Singleton, Eager Initialization)))
+.Cache.java
+[source,java]
+----
+include::../../../ch02-singleton/ex01-eager-initialization/src/main/java/com/example/Cache.java[]
+----
+
+=== Lazy Loading with thread safety
+
+(((Singleton, Lazy Loading)))
+.Cache.java
+[source,java]
+----
+include::../../../ch02-singleton/ex02-lazy-loading/src/main/java/com/example/Cache.java[]
+----
+
+=== Lazy Loading with Double Checked Locking
+
+(((Singleton, Lazy Loading, Double Checking)))
+.Cache.java
+[source,java]
+----
+include::../../../ch02-singleton/ex03-double-check/src/main/java/com/example/Cache.java[]
+----
+
+=== Bill Pugh's Static Helper
+
+(((Singleton, Bill Pugh, Static Helper)))
+.Cache.java
+[source,java]
+----
+include::../../../ch02-singleton/ex04-static-helper/src/main/java/com/example/Cache.java[]
+----
+
+=== Interface Based Implementation
+
+(((Singleton, Interface Based)))
+.Cache.java
+[source,java]
+----
+include::../../../ch02-singleton/ex05-interface-based/src/main/java/com/example/Cache.java[]
+----
+
+=== Spring Boot Version
+
+(((Singleton, Spring Boot Version)))
+.Cache.java
+[source,java]
+----
+include::../../../ch02-singleton/ex06-springboot/src/main/java/com/example/Cache.java[]
+----
+
+.AcceptList.java
+[source,java]
+----
+include::../../../ch02-singleton/ex06-springboot/src/main/java/com/example/AcceptList.java[]
+----
+
+=== Singleton and Enum by Joshua Bloch
+
+[source,java]
+----
+package com.journaldev.singleton;
+
+public enum Cache {
+
+    INSTANCE;
+
+    public static void doSomething(){
+        //do something
+    }
+}
+----
+
+=== Singleton and reflection
+
+(((Singleton, Reflection)))
+
+=== Singleton and serialization
+
+(((Singleton, Serialization)))

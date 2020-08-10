@@ -1,0 +1,21 @@
+plugins {
+    id 'groovy'
+	id 'org.springframework.boot' version '2.3.2.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+
+    sourceCompatibility = '14'
+}
+
+subprojects {
+    version = '1.0'
+}
+
+
+

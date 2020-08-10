@@ -1,0 +1,8 @@
+=== Interface Segregation Principle
+
+(((Interface Segregation Principle)))
+Interface Segregation Principle introduction
+
+(((Interface Segregation Principle,do one thing)))
+concept
+

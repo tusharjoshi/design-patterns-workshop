@@ -1,0 +1,18 @@
+[[ch01-solid-principles]]
+== SOLID Principles
+
+SOLID Principles Introduction
+
+include::sections/s01-single-responsibility.adoc[]
+
+include::sections/s02-open-close.adoc[]
+
+include::sections/s03-liskov-substitution.adoc[]
+
+include::sections/s04-interface-segregation.adoc[]
+
+include::sections/s05-dependency-inversion.adoc[]
+
+=== Summary
+
+Summary for SOLID Principles

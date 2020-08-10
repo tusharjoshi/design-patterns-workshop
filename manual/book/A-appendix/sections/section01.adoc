@@ -1,0 +1,41 @@
+=== Section 01
+
+((index2))
+Some details section
+
+Here are the other built-in admonition types:
+
+NOTE: Some additional info...
+
+TIP: Pro tip...
+
+IMPORTANT: Don't forget...
+
+WARNING: Watch out for...
+
+CAUTION: Ensure that...
+
+[NOTE]
+====
+This is a NOTE
+====
+
+[TIP]
+====
+This is a TIP
+====
+
+[IMPORTANT]
+====
+This is a IMPORTANT
+====
+
+[WARNING]
+====
+This is a warning
+====
+
+[CAUTION]
+====
+This is a CAUTION
+====

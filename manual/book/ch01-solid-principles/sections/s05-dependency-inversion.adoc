@@ -1,0 +1,8 @@
+=== Dependency Inversion Principle
+
+(((Dependency Inversion Principle)))
+Dependency Inversion Principle introduction
+
+(((Dependency Inversion Principle,do one thing)))
+concept
+

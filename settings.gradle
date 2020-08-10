@@ -1,0 +1,8 @@
+rootProject.name = 'design-pattern-examples'
+
+include 'ch02-singleton:ex01-eager-initialization'
+include 'ch02-singleton:ex02-lazy-loading'
+include 'ch02-singleton:ex03-double-check'
+include 'ch02-singleton:ex04-static-helper'
+include 'ch02-singleton:ex05-interface-based'
+include 'ch02-singleton:ex06-springboot'
