@@ -25,6 +25,8 @@ include::ch01-solid-principles/ch01-solid-principles.adoc[]
 
 include::ch02-singleton/ch02-singleton.adoc[]
 
+include::ch03-factory/ch03-factory.adoc[]
+
 include::references.adoc[]
 
 // include::A-appendix/A-appendix.adoc[]

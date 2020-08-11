@@ -1,0 +1,63 @@
+[[ch03-factory]]
+== Factory Pattern
+
+=== GoF Definition
+
+Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+
+=== Things to note about Factory Pattern
+
+* This pattern caters to creation of objects of specific interface/class, let us call it `Product`
+* The term interface is referred as a generic concept that is a contract expressed for the calling code to expect in the `Product`
+* Factory or Creator class is used to create the objects of the specific interface
+* The concrete implementation which is returned from the `Factory` method is not known to the calling code
+
+=== UML Interpretation
+
+.Image Components of Factory Pattern
+image::ch03-factory/factory-pattern.png[Factory Pattern Components.]
+
+=== Basic Example
+
+[source,java]
+----
+include::../../../ch03-factory/ex01/src/main/java/com/example/IShape.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch03-factory/ex01/src/main/java/com/example/IShapeFactory.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch03-factory/ex01/src/main/java/com/example/Circle.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch03-factory/ex01/src/main/java/com/example/Rectangle.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch03-factory/ex01/src/main/java/com/example/BasicShapeFactory.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch03-factory/ex01/src/test/java/com/example/BasicShapeFactoryTest.java[tags=source]
+----
+
+=== Factory instances in JDK
+
+(((Factory, JDK Examples)))
+Factory examples in Java core libraries:
+
+* java.util.Calendar#getInstance()
+* java.util.ResourceBundle#getBundle()
+* java.text.NumberFormat#getInstance()
+* java.nio.charset.Charset#forName()
+* java.net.URLStreamHandlerFactory#createURLStreamHandler(String)
+* java.util.EnumSet#of()
+* javax.xml.bind.JAXBContext#createMarshaller()
