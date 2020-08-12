@@ -14,3 +14,5 @@ Timms, Simon. Mastering Javascript Design Patterns. Packt Publishing, 2014.
 Martin, Robert C., editor. Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall, 2009.
 
 Hall, Gary McLean. Adaptive Code: Agile Coding with Design Patterns and SOLID Principles. Second edition, Microsoft Press, 2017.
+
+http://coding-geek.com/category/design-pattern/[Coding Geek] Design Pattern category posts

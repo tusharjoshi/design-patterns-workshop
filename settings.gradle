@@ -1,5 +1,8 @@
 rootProject.name = 'design-pattern-examples'
 
+include 'ch01-solid-principles:s02-open-close:ex01-switch-unclean'
+include 'ch01-solid-principles:s02-open-close:ex02-switch-clean'
+
 include 'ch02-singleton:ex01-eager-initialization'
 include 'ch02-singleton:ex02-lazy-loading'
 include 'ch02-singleton:ex03-double-check'
@@ -7,4 +10,6 @@ include 'ch02-singleton:ex04-static-helper'
 include 'ch02-singleton:ex05-interface-based'
 include 'ch02-singleton:ex06-springboot'
 
-include 'ch03-factory:ex01'
+include 'ch03-factory:ex01-basic-factory'
+include 'ch03-factory:ex02-loose-coupling'
+include 'ch03-factory:ex03-encapsulation'

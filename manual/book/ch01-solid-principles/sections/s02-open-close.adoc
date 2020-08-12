@@ -1,8 +1,58 @@
 === Open Close Principle
-
 (((Open Close Principle)))
-Open Close Principle introduction
+Open Close Principle advocates class to be open for extension but closed for modifications.  To enhance the functionality the design should allow additions of new functionality by adding new files to the code, instead of modifying an existing file.
 
-(((Open Close Principle,do one thing)))
-concept
+==== Switch Unclean Example
+(((Open Close Principle, Switch Unclean)))
+The logic in the example below in `DiscountCalculator` is based on month number.  For different months we need discount to be calculated with some rules.  For addition of new rules or modification of any existing rule we will have to change the file `DiscountCalculator` and hence this file violates the open close principle.
 
+Just to change one rule if we touch the file `DiscountCalculator` we will have to regression test all the rules to make sure nothing is broken in other parts which are also in the same file.
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s02-open-close/ex01-switch-unclean/src/main/java/com/example/DiscountCalculator.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s02-open-close/ex01-switch-unclean/src/test/java/com/example/DiscountCalculatorTest.java[tags=source]
+----
+
+==== Switch clean version
+(((Open Close Principle, Switch Clean Version)))
+In this version we extracted the logic of calculating the discount into separate classes implementing same interface.  The map of all such strategies will maintain what rule we want to use for certain month.
+
+If we need to change an existing rule only one existing class needs changes and the rest of the rules need no testing as they were not changed.
+
+For addition of new rule we need to add a new class implementation of strategy and add it to the map.  Again retesting of existing rules is not needed, as `DiscountCalculator` class is now open to extension but closed to modification.
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/DiscountCalculator.java[tags=source]
+----
+<1> Get strategy object for given month
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/IDiscountStrategy.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/strategies/DiscountStrategyMap.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/strategies/JanFebDiscountStrategy.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/strategies/AugDiscountStrategy.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/strategies/OtherDiscountStrategy.java[tags=source]
+----
