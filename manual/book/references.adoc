@@ -16,3 +16,5 @@ Martin, Robert C., editor. Clean Code: A Handbook of Agile Software Craftsmanshi
 Hall, Gary McLean. Adaptive Code: Agile Coding with Design Patterns and SOLID Principles. Second edition, Microsoft Press, 2017.
 
 http://coding-geek.com/category/design-pattern/[Coding Geek] Design Pattern category posts
+
+https://refactoring.guru/design-patterns/abstract-factory/java/example[Refactoring Guru] Design Patterns Catalog

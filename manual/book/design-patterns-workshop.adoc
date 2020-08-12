@@ -27,6 +27,8 @@ include::ch02-singleton/ch02-singleton.adoc[]
 
 include::ch03-factory/ch03-factory.adoc[]
 
+include::ch04-abstract-factory/ch04-abstract-factory.adoc[]
+
 include::references.adoc[]
 
 // include::A-appendix/A-appendix.adoc[]

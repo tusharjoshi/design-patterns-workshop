@@ -1,0 +1,67 @@
+[[ch04-abstract-factory]]
+== Abstract Factory Pattern
+
+=== GoF Definition
+
+Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+=== UML Interpretation
+
+.Image Components of Abstract Factory Pattern
+image::ch04-abstract-factory/abstract-factory.png[Abstract Factory Pattern Components.]
+
+=== UI Tools Example
+(((Abstract Factory, UI Tools Example)))
+`IUIToolsFactory` is public contract for any factory to satisfy.  Any class implementing this interface agrees to provide a factory for three product interfaces `IShape`, `IToolButton` and `IMenuList`.
+
+A set of Factory class and concrete product classes is created as one option for the factory implementation.
+
+Similarly another Factory implementation is made available which can be replaced in the constructor of `Application` class to switch the products from one set of or family of products to another family of products.
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/Application.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IUIToolsFactory.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IMenuList.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IToolButton.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IShape.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/factory/basic/BasicToolsFactory.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/factory/advanced/AdvancedToolsFactory.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/test/java/com/example/ApplicationTest.java[tags=source]
+----
+
+
+
+=== Abstract Factory instances in JDK
+
+* javax.xml.parsers.DocumentBuilderFactory#newInstance()
+* javax.xml.transform.TransformerFactory#newInstance()
+* javax.xml.xpath.XPathFactory#newInstance()

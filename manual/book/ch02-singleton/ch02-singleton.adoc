@@ -93,7 +93,7 @@ If the singleon class supports serialization then it can be serialized and deser
 
 === Singleton Instances in JDK
 
-(((SIngleton, JDK Examples)))
+(((Singleton, JDK Examples)))
 Singleton examples in Java core libraries:
 
 * java.lang.Runtime#getRuntime()
