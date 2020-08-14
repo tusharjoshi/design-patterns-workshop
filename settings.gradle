@@ -15,3 +15,7 @@ include 'ch03-factory:ex02-loose-coupling'
 include 'ch03-factory:ex03-encapsulation'
 
 include 'ch04-abstract-factory:ex01-ui-tools-factory'
+include 'ch04-abstract-factory:ex02-interface-separation:core'
+include 'ch04-abstract-factory:ex02-interface-separation:basic'
+include 'ch04-abstract-factory:ex02-interface-separation:advanced'
+include 'ch04-abstract-factory:ex02-interface-separation:application'

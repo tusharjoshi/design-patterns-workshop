@@ -15,6 +15,17 @@ Martin, Robert C., editor. Clean Code: A Handbook of Agile Software Craftsmanshi
 
 Hall, Gary McLean. Adaptive Code: Agile Coding with Design Patterns and SOLID Principles. Second edition, Microsoft Press, 2017.
 
+Evans, Eric. Domain-Driven Design: Tackling Complexity in the Heart of Software. Addison-Wesley, 2004.
+
+Leitner, Helmut. Pattern Theory: Introduction and Perspectives on the Tracks of Christopher Alexander. First printing, Helmut Leitner, HLS Software, 2015.
+
+Thomas, David, and Andrew Hunt. The Pragmatic Programmer, 20th Anniversary Edition: Journey to Mastery. Second edition, Addison-Wesley, 2019.
+
+
 http://coding-geek.com/category/design-pattern/[Coding Geek] Design Pattern category posts
 
 https://refactoring.guru/design-patterns/abstract-factory/java/example[Refactoring Guru] Design Patterns Catalog
+
+https://martinfowler.com/articles/writingPatterns.html[Martin Fowlers Article on Patterns]
+
+https://hillside.net/index.php/a-pattern-language-for-pattern-writing[A Pattern Language for Pattern Writing] by Gerard Meszaros, Jim Doble
