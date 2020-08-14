@@ -29,6 +29,10 @@ include::ch03-factory/ch03-factory.adoc[]
 
 include::ch04-abstract-factory/ch04-abstract-factory.adoc[]
 
+include::ch05-builder/ch05-builder.adoc[]
+
+include::ch06-prototype/ch06-prototype.adoc[]
+
 include::references.adoc[]
 
 // include::A-appendix/A-appendix.adoc[]
