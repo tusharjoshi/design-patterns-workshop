@@ -21,5 +21,8 @@ include 'ch04-abstract-factory:ex02-interface-separation:advanced'
 include 'ch04-abstract-factory:ex02-interface-separation:application'
 
 include 'ch05-builder:ex01-resume-builder'
+include 'ch05-builder:ex02-constructor-chaining'
+include 'ch05-builder:ex03-person-builder'
+include 'ch05-builder:ex04-fluent-builder'
 
 include 'ch06-prototype:ex01'
