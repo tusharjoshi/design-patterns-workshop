@@ -13,7 +13,7 @@ Tushar Joshi <tusharvjoshi@gmail.com>
 
 ifdef::ebook-format[:leveloffset: -1]
 
-// include::license.adoc[]
+include::license.adoc[]
 
 // include::preface.adoc[]
 

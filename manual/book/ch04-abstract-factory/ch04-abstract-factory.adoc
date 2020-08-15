@@ -5,10 +5,41 @@
 
 Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
 
-=== UML Interpretation
+=== Block Diagram
 
 .Image Components of Abstract Factory Pattern
 image::ch04-abstract-factory/abstract-factory.png[Abstract Factory Pattern Components.]
+
+=== UML Representation
+
+[plantuml, abstract-factory, png]
+----
+interface IUIToolsFactory
+interface IMenuList
+interface IShape
+interface IToolButton
+class BasicToolsFactory
+class AdvancedToolsFactory
+class BasicShape
+class BasicToolButton
+class BasicMenuList
+class AdvancedShape
+class AdvancedToolButton
+class AdvancedMenuList
+class Application
+IUIToolsFactory <|.. BasicToolsFactory
+IUIToolsFactory <|.. AdvancedToolsFactory
+IMenuList <|.. BasicMenuList
+IShape <|.. BasicShape
+IToolButton <|.. BasicToolButton
+IMenuList <|.. AdvancedMenuList
+IShape <|.. AdvancedShape
+IToolButton <|.. AdvancedToolButton
+IMenuList <-- IUIToolsFactory
+IShape <-- IUIToolsFactory
+IToolButton <-- IUIToolsFactory
+IUIToolsFactory <-- Application
+----
 
 === UI Tools Example
 (((Abstract Factory, UI Tools Example)))
@@ -58,6 +89,44 @@ include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/
 include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/test/java/com/example/ApplicationTest.java[tags=source]
 ----
 
+=== Interface Separation
+
+[plantuml, abstract-factory-intf-sep, png]
+----
+package com.example.core {
+    interface IUIToolsFactory
+    interface IMenuList
+    interface IShape
+    interface IToolButton
+}
+package com.example.factory.basic {
+    class BasicToolsFactory
+    class BasicShape
+    class BasicToolButton
+    class BasicMenuList
+}
+package com.example.factory.advanced {
+    class AdvancedToolsFactory
+    class AdvancedShape
+    class AdvancedToolButton
+    class AdvancedMenuList
+}
+package com.example {
+    class Application
+}
+IUIToolsFactory <|.. BasicToolsFactory
+IUIToolsFactory <|.. AdvancedToolsFactory
+IMenuList <|.. BasicMenuList
+IShape <|.. BasicShape
+IToolButton <|.. BasicToolButton
+IMenuList <|.. AdvancedMenuList
+IShape <|.. AdvancedShape
+IToolButton <|.. AdvancedToolButton
+IMenuList <-- IUIToolsFactory
+IShape <-- IUIToolsFactory
+IToolButton <-- IUIToolsFactory
+IUIToolsFactory <-- Application
+----
 
 
 === Abstract Factory instances in JDK

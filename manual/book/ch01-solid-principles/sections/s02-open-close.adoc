@@ -8,6 +8,17 @@ The logic in the example below in `DiscountCalculator` is based on month number.
 
 Just to change one rule if we touch the file `DiscountCalculator` we will have to regression test all the rules to make sure nothing is broken in other parts which are also in the same file.
 
+=== UML Representation
+
+[plantuml, switch-unclean, png]
+----
+class DiscountCalculator {
+    double calculateDiscount(double amount, int month)
+}
+class Application
+DiscountCalculator <-- Application
+----
+
 [source,java]
 ----
 include::../../../../ch01-solid-principles/s02-open-close/ex01-switch-unclean/src/main/java/com/example/DiscountCalculator.java[tags=source]
@@ -25,6 +36,28 @@ In this version we extracted the logic of calculating the discount into separate
 If we need to change an existing rule only one existing class needs changes and the rest of the rules need no testing as they were not changed.
 
 For addition of new rule we need to add a new class implementation of strategy and add it to the map.  Again retesting of existing rules is not needed, as `DiscountCalculator` class is now open to extension but closed to modification.
+
+=== UML Representation
+
+[plantuml, switch-clean, png]
+----
+interface IDiscountStrategy {
+    +double calculateDiscount(double amount, int month)
+}
+class DiscountCalculator {
+    double calculateDiscount(double amount, int month)
+}
+class JanFebDiscountStrategy
+class AugDiscountStrategy
+class OtherDiscountStrategy
+class Application
+IDiscountStrategy <|.. JanFebDiscountStrategy
+IDiscountStrategy <|.. AugDiscountStrategy
+IDiscountStrategy <|.. OtherDiscountStrategy
+DiscountCalculator --> IDiscountStrategy
+DiscountCalculator <-- Application
+
+----
 
 [source,java]
 ----

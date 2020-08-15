@@ -11,7 +11,7 @@ namespace :book do
         version_string = '0'
       end
       date_string = Time.now.strftime("%Y-%m-%d")
-      params = "--attribute revnumber='#{version_string}' --attribute revdate='#{date_string}'"
+      params = "--attribute revnumber='#{version_string}' --attribute revdate='#{date_string}' -r asciidoctor-diagram"
 
       puts "Converting to HTML..."
       `bundle exec asciidoctor #{params} -D #{output_dir} -a data-uri #{book_file}`

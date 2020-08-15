@@ -14,8 +14,23 @@ Define an interface for creating an object, but let subclasses decide which clas
 
 === UML Interpretation
 
-.Image Components of Factory Pattern
-image::ch03-factory/factory-pattern.png[Factory Pattern Components.]
+[plantuml, basic-factory, png]
+----
+interface IShape
+interface IShapeFactory
+class Circle
+class Rectangle
+class BasicShapeFactory
+class Application
+IShape <|.. Circle
+IShape <|.. Rectangle
+IShapeFactory <|.. BasicShapeFactory
+Application --> IShapeFactory
+Application --> IShape
+BasicShapeFactory --> IShape
+BasicShapeFactory --> Circle
+BasicShapeFactory --> Rectangle
+----
 
 === Basic Factory
 (((Factory, Basic Factory)))

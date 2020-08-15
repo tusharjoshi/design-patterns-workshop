@@ -5,6 +5,28 @@
 
 Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
 
+=== UML Representation
+
+[plantuml, vocabulary-store, png]
+----
+interface IVocabularyStore {
+    IVocabularyStore getCopy()
+}
+class DefaultVocabularyStore {
+    IVocabularyStore getCopy()
+}
+class VocabularyStoreFactory {
+    {field} -IVocabularyStore vocabularyStore (This is prototype object)
+    IVocabularyStore getVocabularyStore()
+}
+class Application
+IVocabularyStore <|.. DefaultVocabularyStore
+VocabularyStoreFactory --> IVocabularyStore
+VocabularyStoreFactory --> DefaultVocabularyStore
+Application --> IVocabularyStore
+Application--> VocabularyStoreFactory
+----
+
 === Vocabulary Store Example
 (((Prototype, Vocabulary Store Example)))
 [source,java]
