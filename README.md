@@ -15,3 +15,4 @@ The following are the prerequisites for building the source code
 For building manual the following prerequisites are needed
 
 1. Ruby
+2. Graphviz (For plantuml diagrams)
