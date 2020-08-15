@@ -1,4 +1,6 @@
 [dedication]
 == Dedication
 
-_To this and that person
+
+image::rahul-ekbote-2020.jpg[Rahul Ekbote]
+To my mentor https://www.linkedin.com/in/rahul-ekbote-99b9013[Rahul Ekbote], his vision and support made this work possible.
