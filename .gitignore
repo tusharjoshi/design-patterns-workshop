@@ -10,3 +10,17 @@ bin/
 .classpath
 .project
 .settings/
+/ch01-solid-principles/s02-open-close/ex01-switch-unclean/src/main/C#/switch-unclean/.vs/switch-unclean
+/ch01-solid-principles/s02-open-close/ex01-switch-unclean/src/main/C#/switch-unclean/switch-unclean/obj
+/ch01-solid-principles/s02-open-close/ex01-switch-unclean/src/test/C#/SwitchUncleanTests/obj/Debug/netcoreapp2.1
+/ch01-solid-principles/s02-open-close/ex01-switch-unclean/src/test/C#/SwitchUncleanTests/obj
+/ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/C#/SwitchClean/obj/Debug/netcoreapp2.1
+/ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/C#/SwitchClean/obj
+/ch01-solid-principles/s02-open-close/ex02-switch-clean/src/test/C#/SwitchCleanTests/obj/Debug/netcoreapp2.1
+/ch01-solid-principles/s02-open-close/ex02-switch-clean/src/test/C#/SwitchCleanTests/obj
+/ch03-factory/ex01-basic-factory/src/main/C#/BasicFactory/obj/Debug/netcoreapp2.1
+/ch03-factory/ex01-basic-factory/src/main/C#/BasicFactory/obj
+/ch03-factory/ex01-basic-factory/src/test/C#/ShapeFactoryTests/obj/Debug/netcoreapp2.1
+/ch03-factory/ex01-basic-factory/src/test/C#/ShapeFactoryTests/obj
+/ch03-factory/ex02-loose-coupling/src/main/C#/LooseCoupling/obj
+/ch03-factory/ex01-basic-factory/src/test/C#/UnitTestProject1/obj
