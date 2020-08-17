@@ -29,3 +29,6 @@ include 'ch06-prototype:ex01'
 
 include 'ch07-adapter:ex01:library'
 include 'ch07-adapter:ex01:example'
+
+include 'ch08-bridge:ex01-inheritance'
+include 'ch08-bridge:ex02-bridge'

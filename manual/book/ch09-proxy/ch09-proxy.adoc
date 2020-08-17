@@ -5,4 +5,27 @@
 
 Provide a surrogate or placeholder for another object to control access to it.
 
+== Basic Components
+
+[plantuml, proxy-components, png]
+----
+class RealService
+class ProxyService
+class ServiceFactory {
+    {static} +RealService getService()
+}
+class Application
+RealService <|-- ProxyService
+RealService <-- ServiceFactory
+ProxyService <-- ServiceFactory
+ServiceFactory <-- Application
+RealService <-- Application
+----
+
 === Proxy instances in JDK
+
+* java.lang.reflect.Proxy
+* java.rmi.*
+* javax.ejb.EJB (Proxies injected by framworks)
+* javax.inject.Inject (Proxies injected by frameworks)
+* javax.persistence.PersistenceContext
