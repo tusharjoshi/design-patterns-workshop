@@ -89,7 +89,7 @@ include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/
 include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/test/java/com/example/ApplicationTest.java[tags=source]
 ----
 
-=== Interface Separation
+=== Separate Interface.footnote:[Pattern from Martin Fowlers Catalog of Patterns of Entreprise Application Architecture]
 
 [plantuml, abstract-factory-intf-sep, png]
 ----

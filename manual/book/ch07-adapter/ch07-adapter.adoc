@@ -1,0 +1,73 @@
+[[ch07-adapter]]
+== Adapter Pattern
+
+=== GoF Definition
+
+Convert the interface of a class into another interface that clients expect. Adapter lets classes work together that could not otherwise because of incompatible interfaces.
+
+=== Basic Components
+
+[plantuml, adapter-block, png]
+----
+class Product1
+class Product2
+class Product1Adapter
+Product1 <|-- Product1Adapter
+Product2 <--* Product1Adapter
+----
+
+=== UML Representation
+
+[plantuml, adapter, png]
+----
+package com.library {
+    class Polygon
+    class VertexCalculator
+}
+package com.company.example {
+    class Polyline
+    class PolygonAdapter
+    class Application
+}
+Polyline <--* Application
+Polyline <--* PolygonAdapter
+Polygon <|-- PolygonAdapter
+Polygon <-- VertexCalculator
+Application --> VertexCalculator
+----
+
+[source,java]
+----
+include::../../../ch07-adapter/ex01/library/src/main/java/com/library/Polygon.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch07-adapter/ex01/library/src/main/java/com/library/VertexCalculator.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch07-adapter/ex01/example/src/main/java/com/company/example/Polyline.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch07-adapter/ex01/example/src/main/java/com/company/example/PolygonAdapter.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch07-adapter/ex01/example/src/main/java/com/company/example/Application.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch07-adapter/ex01/example/src/test/java/com/company/example/ApplicationTest.java[tags=source]
+----
+
+=== Adapter instances in JDK
+
+* java.util.Arrays#asList()
+* java.util.Collections#list()
+* java.util.Collections#enumeration()

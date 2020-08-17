@@ -21,6 +21,9 @@ Leitner, Helmut. Pattern Theory: Introduction and Perspectives on the Tracks of 
 
 Thomas, David, and Andrew Hunt. The Pragmatic Programmer, 20th Anniversary Edition: Journey to Mastery. Second edition, Addison-Wesley, 2019.
 
+http://ftacademy.org/sites/ftacademy.org/files/materials/fta-m11-soft_arch-pre.pdf[Software Architecture Guide by Free Technology Academy]
+
+https://martinfowler.com/eaaCatalog/[Martin Fowler's Catalog of Patterns of Enterprise Application Architecture]
 
 http://coding-geek.com/category/design-pattern/[Coding Geek] Design Pattern category posts
 

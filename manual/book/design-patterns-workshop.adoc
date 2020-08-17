@@ -33,6 +33,14 @@ include::ch05-builder/ch05-builder.adoc[]
 
 include::ch06-prototype/ch06-prototype.adoc[]
 
+include::ch07-adapter/ch07-adapter.adoc[]
+
+include::ch08-bridge/ch08-bridge.adoc[]
+
+include::ch09-proxy/ch09-proxy.adoc[]
+
+include::example-conventions.adoc[]
+
 include::references.adoc[]
 
 // include::A-appendix/A-appendix.adoc[]

@@ -26,3 +26,6 @@ include 'ch05-builder:ex03-person-builder'
 include 'ch05-builder:ex04-fluent-builder'
 
 include 'ch06-prototype:ex01'
+
+include 'ch07-adapter:ex01:library'
+include 'ch07-adapter:ex01:example'

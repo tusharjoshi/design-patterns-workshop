@@ -1,0 +1,14 @@
+[[ch08-bridge]]
+== Bridge Pattern
+
+=== GoF Definition
+
+Decouple an abstraction from its implementation so that the two can vary independently.
+
+=== Bridge instances in JDK
+
+* java.lang.reflect.Proxy
+* java.rmi.*
+* javax.ejb.EJB (Proxies injected by framworks)
+* javax.inject.Inject (Proxies injected by frameworks)
+* javax.persistence.PersistenceContext
