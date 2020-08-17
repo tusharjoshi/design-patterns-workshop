@@ -22,6 +22,18 @@ ServiceFactory <-- Application
 RealService <-- Application
 ----
 
+=== Remote Proxies
+
+Remote Proxies provide a local representation of another remote object or resource. Remote proxies are responsible not just for representation but also for some maintenance work. Such work could include connecting to a remote machine and maintaining the connection, encoding and decoding characters obtained through networking traffic, parsing, etc.
+
+=== Virtual Proxies
+
+Virtual Proxies wrap expensive objects and loads them on-demand. Sometimes we don't immediately need all functionalities that an object offers, especially if it is memory/time-consuming. Calling objects only when needed might increase performance quite a bit, as we'll see in the example below.
+
+=== Protection Proxies
+
+Protection Proxies are used for checking certain conditions. Some objects or resources might need appropriate authorization for accessing them, so using a proxy is one of the ways in which such conditions can be checked. With protection proxies, we also get the flexibility of having many variations of access control.
+
 === Proxy instances in JDK
 
 * java.lang.reflect.Proxy
