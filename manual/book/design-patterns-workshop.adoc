@@ -15,9 +15,9 @@ ifdef::ebook-format[:leveloffset: -1]
 
 include::license.adoc[]
 
-// include::preface.adoc[]
+include::preface.adoc[]
 
-// include::dedication.adoc[]
+include::dedication.adoc[]
 
 include::introduction.adoc[]
 
