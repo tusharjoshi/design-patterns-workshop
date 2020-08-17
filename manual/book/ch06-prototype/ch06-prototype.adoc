@@ -21,10 +21,10 @@ class VocabularyStoreFactory {
 }
 class Application
 IVocabularyStore <|.. DefaultVocabularyStore
-VocabularyStoreFactory --> IVocabularyStore
+IVocabularyStore <-- VocabularyStoreFactory
 VocabularyStoreFactory --> DefaultVocabularyStore
-Application --> IVocabularyStore
-Application--> VocabularyStoreFactory
+IVocabularyStore <-- Application
+VocabularyStoreFactory <-- Application
 ----
 
 === Vocabulary Store Example

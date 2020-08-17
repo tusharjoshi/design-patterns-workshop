@@ -32,7 +32,7 @@ class AbstractResumeBuilder
 class ResumeMaker
 class ProfessionalResumeBuilder
 class SocialResumeBuilder
-IResumeBuilder <|-- AbstractResumeBuilder
+IResumeBuilder <|.. AbstractResumeBuilder
 AbstractResumeBuilder <|-- ProfessionalResumeBuilder
 AbstractResumeBuilder <|-- SocialResumeBuilder
 ResumeMaker --> IResumeBuilder

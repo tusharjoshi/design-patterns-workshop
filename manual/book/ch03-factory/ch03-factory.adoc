@@ -25,11 +25,11 @@ class Application
 IShape <|.. Circle
 IShape <|.. Rectangle
 IShapeFactory <|.. BasicShapeFactory
-Application --> IShapeFactory
-Application --> IShape
-BasicShapeFactory --> IShape
-BasicShapeFactory --> Circle
-BasicShapeFactory --> Rectangle
+IShapeFactory <-- Application
+IShape <-- Application
+IShape <-- BasicShapeFactory
+Circle <-- BasicShapeFactory
+Rectangle <-- BasicShapeFactory
 ----
 
 === Basic Factory
