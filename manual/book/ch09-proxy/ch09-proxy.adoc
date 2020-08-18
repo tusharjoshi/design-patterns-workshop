@@ -5,7 +5,7 @@
 
 Provide a surrogate or placeholder for another object to control access to it.
 
-== Basic Components
+=== Basic Components
 
 [plantuml, proxy-components, png]
 ----

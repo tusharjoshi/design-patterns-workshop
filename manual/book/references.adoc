@@ -32,3 +32,5 @@ https://refactoring.guru/design-patterns/abstract-factory/java/example[Refactori
 https://martinfowler.com/articles/writingPatterns.html[Martin Fowlers Article on Patterns]
 
 https://hillside.net/index.php/a-pattern-language-for-pattern-writing[A Pattern Language for Pattern Writing] by Gerard Meszaros, Jim Doble
+
+https://stackabuse.com/tag/design-patterns/[Design Pattern tag articles on StackAbuse.com site] https://stackabuse.com/structural-design-patterns-in-java/[Structural] https://stackabuse.com/behavioral-design-patterns-in-java/[Behavioral] https://stackabuse.com/design-patterns-in-java/[Catalog]

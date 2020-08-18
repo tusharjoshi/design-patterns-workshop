@@ -1,0 +1,53 @@
+[[ch13-flyweight]]
+== Flyweight Pattern
+
+=== GoF Definition
+
+Use sharing to support large numbers of fine-grained objects efficiently.
+
+=== Basic Components
+
+[plantuml, flyweight-components, png]
+----
+class Flyweight
+class FlyweightFactory {
+    +Flyweight getFlyweight(params for key)
+}
+class Client
+Flyweight <--o FlyweightFactory
+FlyweightFactory <-- Client
+Flyweight <--o Client
+----
+
+=== UML Representation
+
+[plantuml, flyweight-format, png]
+----
+class Format
+class FormatFactory {
+    +Format getFormat(String color, int fontSize)
+}
+class Client
+Format <--o FormatFactory
+FormatFactory <-- Client
+Format <--o Client
+----
+
+[source,java]
+----
+include::../../../ch13-flyweight/ex01/src/main/java/com/company/example/Format.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch13-flyweight/ex01/src/main/java/com/company/example/FormatFactory.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch13-flyweight/ex01/src/test/java/com/company/example/FormatFactoryTest.java[tags=source]
+----
+
+=== References in JDK
+
+* java.lang.Integer#valueOf(int) (also Boolean, Byte, Character, Short, Long and BigDecimal)

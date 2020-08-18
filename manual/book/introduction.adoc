@@ -7,6 +7,41 @@
 Patterns is a concept introduced by Christopher Alexander,footnote:[Christopher Wolfgang Alexander is a British-American architect and design theorist. His theories about the nature of human-centered design have affected fields beyond architecture, including urban design, software, sociology and others. Alexander is regarded as the father of the pattern language movement.] and is widely accepted in the software community to document design constructs which are used to build software systems.
 Patterns provide a structured way of looking at a problem space with the solutions which are seen multiple times and proven.
 
+[plantuml, design-patterns-map, png]
+----
+@startmindmap
+* Design Patterns
+** Behavioral Patterns
+*** Chain of Responsibility
+*** Command
+*** Iterator
+*** Mediator
+*** Memento
+*** Observer
+*** State
+*** Strategy
+*** Template Method
+*** Visitor
+
+left side
+
+** Creational Patterns
+*** Singleton
+*** Factory
+*** Abstract Factory
+*** Builder
+*** Prototype
+** Structural Patterns
+*** Adapter
+*** Bridge
+*** Proxy
+*** Composite
+*** Decorator
+*** Facade
+*** Flyweight
+@endmindmap
+----
+
 
 
 Let's get started.

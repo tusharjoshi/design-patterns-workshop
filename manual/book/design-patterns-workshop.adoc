@@ -39,6 +39,14 @@ include::ch08-bridge/ch08-bridge.adoc[]
 
 include::ch09-proxy/ch09-proxy.adoc[]
 
+include::ch10-composite/ch10-composite.adoc[]
+
+include::ch11-decorator/ch11-decorator.adoc[]
+
+include::ch12-facade/ch12-facade.adoc[]
+
+include::ch13-flyweight/ch13-flyweight.adoc[]
+
 include::example-conventions.adoc[]
 
 include::references.adoc[]
