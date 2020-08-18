@@ -10,3 +10,6 @@ bin/
 .classpath
 .project
 .settings/
+
+# macOs specific
+.DS_Store
