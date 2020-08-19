@@ -51,6 +51,6 @@ include::example-conventions.adoc[]
 
 include::references.adoc[]
 
-// include::A-appendix/A-appendix.adoc[]
+include::A-mnemonic/A-mnemonic.adoc[]
 
 ifdef::index[include::index.adoc[]]

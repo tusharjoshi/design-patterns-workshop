@@ -27,7 +27,7 @@ class SubDecorator2 {
     +operation4()
 }
 Component <|-- Decorator
-Component *-- Decorator
+Component --* Decorator
 Decorator <|-- SubDecorator1
 Decorator <|-- SubDecorator2
 ----
@@ -94,7 +94,6 @@ class LoggerV2
 class LoggerWrapper
 class User
 class Client
-ILogger <|.. LoggerV2
 ILogger <|.. LoggerWrapper
 LoggerV2 <--* LoggerWrapper
 User <--* LoggerWrapper
@@ -116,7 +115,7 @@ include::../../../ch11-decorator/ex02-anti-corruption/src/main/java/com/company/
 include::../../../ch11-decorator/ex02-anti-corruption/src/test/java/com/company/example/LoggerWrapperTest.java[tags=source]
 ----
 
-=== Proxy instances in JDK
+=== Decorator instances in JDK
 
 * java.io.InputStream
 * java.io.InputStreamReader

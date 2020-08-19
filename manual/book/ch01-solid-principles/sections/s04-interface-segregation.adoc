@@ -1,8 +1,145 @@
 === Interface Segregation Principle
 
 (((Interface Segregation Principle)))
-Interface Segregation Principle introduction
+Clients should not be forced to depend upon interfaces that they do not use.
 
-(((Interface Segregation Principle,do one thing)))
-concept
+==== Example without ISP
+
+The following example contains an interface having four methods.
+Any implementation of the `ICRUDProvider` interface need to implement all four methods.
+Even if only one method is needed for the decoration `CachingCRUDProvider` needs to write delegating methods.
+This violated the interface segregation principle.
+The class has boilerplate code and unnecessary test cases need to be writen for this class.
+
+==== UML representation
+
+[plantuml, isp-voilation, png]
+----
+interface ICRUDProvider
+class CachingCRUDProvider {
+    -ICRUDProvider provider
+}
+class Order
+class OrderProvider
+class OrderController
+class Application
+ICRUDProvider <|.. CachingCRUDProvider
+ICRUDProvider *-- CachingCRUDProvider
+ICRUDProvider <|.. OrderProvider
+ICRUDProvider <-- OrderController
+CachingCRUDProvider <-- OrderController
+Order <-- OrderProvider
+OrderProvider <-- Application
+OrderController <-- Application
+Order <-- Application
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/ICRUDProvider.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/CachingCRUDProvider.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/Order.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/OrderProvider.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/OrderController.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/test/java/com/company/example/OrderControllerTest.java[tags=source]
+----
+
+==== Example with ISP
+
+The following example modifies the previous example to fix the violation.
+There are four different interfaces which are granular.
+The `OrderProvider` class is still single class implementing all four interfaces.
+`CachingReader` implementation now does not need to implement unnecessary methods.
+
+==== UML representation
+
+[plantuml, isp-fix, png]
+----
+interface ICreator
+interface IReader
+interface IUpdater
+interface IDeleter
+class CachingReader {
+    -IReader reader
+}
+class Order
+class OrderProvider
+class OrderController
+class Application
+IReader <|.. CachingReader
+IReader *-- CachingReader
+ICreator <|.. OrderProvider
+IReader <|.. OrderProvider
+IUpdater <|.. OrderProvider
+IDeleter <|.. OrderProvider
+ICreator <-- OrderController
+IReader <-- OrderController
+IUpdater <-- OrderController
+IDeleter <-- OrderController
+CachingReader <-- OrderController
+Order <-- OrderProvider
+OrderProvider <-- Application
+OrderController <-- Application
+Order <-- Application
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/ICreator.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/IReader.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/IUpdater.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/IDeleter.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/CachingReader.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/OrderProvider.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/OrderController.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/test/java/com/company/example/OrderControllerTest.java[tags=source]
+----
 

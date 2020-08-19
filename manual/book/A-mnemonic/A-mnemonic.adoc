@@ -1,0 +1,7 @@
+[[A-mnemonic]]
+[appendix]
+== Mnemonic to remember design patterns
+
+Some details here
+
+include::sections/s01-ajit-mungale-mnemonic.adoc[]

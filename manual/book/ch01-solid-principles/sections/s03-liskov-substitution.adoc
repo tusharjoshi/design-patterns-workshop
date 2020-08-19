@@ -1,8 +1,45 @@
 === Liskov Substitution Principle
 
 (((Liskov Substitution Principle)))
-Liskov Substitution Principle introduction
+The component/object must honor the public contract it promises
 
-(((Liskov Substitution Principle,do one thing)))
-concept
+--
+.Barbara Liskov Definition
+
+The Liskov Substitution principle was introduced by Barbara Liskov in her conference keynote “Data abstraction” in 1987.
+
+If S is a subtype of T, then objects of type T may be replaced with objects of type S, without breaking the program.
+--
+
+==== UML Representation
+
+[plantuml, liskov-components, png]
+----
+class Rectangle
+class Square
+class Client
+Rectangle <|-- Square
+Rectangle <-- Client
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s03-liskov-substitution/ex01-rectangle/src/main/java/com/company/example/Rectangle.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s03-liskov-substitution/ex01-rectangle/src/main/java/com/company/example/Square.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s03-liskov-substitution/ex01-rectangle/src/main/java/com/company/example/AreaCalculator.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s03-liskov-substitution/ex01-rectangle/src/test/java/com/company/example/AreaCalculatorTest.java[tags=source]
+----
+
 

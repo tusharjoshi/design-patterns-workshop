@@ -1,8 +1,43 @@
 === Single Responsibility Principle
 
 (((Single Responsibility Principle)))
-Single Responsibility Principle introduction
+The single responsibility principle instructs developers to write code that has one and only one reason to change. If a class has more than one reason to change, it has more than one responsibility. Classes with more than a single responsibility should be broken down into smaller classes, each of which should have only one responsibility and reason to change.
 
-(((Single Responsibility Principle,do one thing)))
-Do one thing concept
+==== All In One
+
+This example violates the single responsibility principle by doing everything at one place.  Such programs are usually written as POC and temporary code, but the Ball Of Mud pattern prevails many times and program written for temporary purposes ends in real world just because it works and provides certain functionality.
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s01-single-responsibility/ex01-all-in-one/src/main/java/com/company/example/Main.java[tags=source]
+----
+
+==== Modular Design with Single Responsibility
+
+Separating the responsibilities into multiple components not only abides by single responsibility principle, it also makes the code unit smaller, easy to read and maintainable.
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/main/java/com/company/example/Greeter.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/main/java/com/company/example/NameProvider.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/main/java/com/company/example/MessageDisplayer.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/main/java/com/company/example/Main.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/test/java/com/company/example/GreeterTest.java[tags=source]
+----
 

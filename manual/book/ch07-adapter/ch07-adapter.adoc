@@ -71,3 +71,5 @@ include::../../../ch07-adapter/ex01/example/src/test/java/com/company/example/Ap
 * java.util.Arrays#asList()
 * java.util.Collections#list()
 * java.util.Collections#enumeration()
+* java.io.InputStreamReader(InputStream) (returns a Reader)
+* java.io.OutputStreamWriter(OutputStream) (returns a Writer)

@@ -68,3 +68,7 @@ include::../../../ch10-composite/ex01/src/main/java/com/company/example/TextElem
 ----
 include::../../../ch10-composite/ex01/src/test/java/com/company/example/HTMLElementTest.java[tags=source]
 ----
+
+=== Proxy instances in JDK
+
+* java.awt.Container#add(Component)

@@ -1,0 +1,41 @@
+=== Popular Mnemonic from Ajit Mungale's article
+
+Interesting mnemonic for the design patterns is available on internet from a post in 2003.  I was able to find reference to thisarticle from 2003 and then it is copied and published in many articles.  The real origin of this mnemonic is unknown.
+
+==== Creational Patterns
+
+* Abstract Factory: Creates an instance of several families of classes
+* Builder: Separates object construction from its representation
+* Factory Method: Creates an instance of several derived classes
+* Prototype: A fully initialized instance to be copied or cloned
+* Singleton: A class in which only a single instance can exist
+
+Mnemonic: ABFPS (Abraham Became First President of States). (((Mnemonic, ABFPS)))
+
+==== Structural Patterns
+
+* Adapter: Match interfaces of different classes
+* Bridge: Separates an object’s abstraction from its implementation
+* Composite: A tree structure of simple and composite objects
+* Decorator: Add responsibilities to objects dynamically
+* Façade: A single class that represents an entire subsystem
+* Flyweight: A fine-grained instance used for efficient sharing
+* Proxy: An object representing another object
+
+Mnemonic: ABCDFFP (((Mnemonic, ABCDFFP)))
+
+==== Behavioral Patterns
+
+* Mediator: Defines simplified communication between classes
+* Memento: Capture and restore an object's internal state
+* Interpreter: A way to include language elements in a program
+* Iterator: Sequentially access the elements of a collection
+* Chain of Resp: A way of passing a request between a chain of objects
+* Command: Encapsulate a command request as an object
+* State: Alter an object's behavior when its state changes
+* Strategy: Encapsulates an algorithm inside a class
+* Observer: A way of notifying change to a number of classes
+* Template Method: Defer the exact steps of an algorithm to a subclass
+* Visitor: Defines a new operation to a class without change
+
+Mnemonic: 2 MICS On TV (MMIICCSSOTV) (((Mnemonic, MMIICCSSOTV)))

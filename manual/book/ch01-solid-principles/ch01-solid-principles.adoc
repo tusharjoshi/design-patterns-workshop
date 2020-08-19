@@ -30,4 +30,5 @@ include::sections/s05-dependency-inversion.adoc[]
 
 === Summary
 
-Summary for SOLID Principles
+While applying design patterns to software design keeping the SOLID principles in mind will make the design robust.
+SOLID principles help in writing clean code which is maintainable, readable, testable and extensible.

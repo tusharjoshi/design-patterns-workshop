@@ -64,8 +64,8 @@ include::../../../ch02-singleton/ex05-interface-based/src/main/java/com/example/
 ----
 
 === Spring Boot Version
-
 (((Singleton, Spring Boot Version)))
+
 .Cache.java
 [source,java]
 ----

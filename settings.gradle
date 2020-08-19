@@ -1,7 +1,15 @@
 rootProject.name = 'design-pattern-examples'
 
+
+include 'ch01-solid-principles:s01-single-responsibility:ex01-all-in-one'
+include 'ch01-solid-principles:s01-single-responsibility:ex02-single-reponsibility'
 include 'ch01-solid-principles:s02-open-close:ex01-switch-unclean'
 include 'ch01-solid-principles:s02-open-close:ex02-switch-clean'
+include 'ch01-solid-principles:s03-liskov-substitution:ex01-rectangle'
+include 'ch01-solid-principles:s04-interface-segregation:ex01-without-segregation'
+include 'ch01-solid-principles:s04-interface-segregation:ex01-with-segregation'
+include 'ch01-solid-principles:s05-dependency-inversion:ex01-without-injection'
+include 'ch01-solid-principles:s05-dependency-inversion:ex01-with-injection'
 
 include 'ch02-singleton:ex01-eager-initialization'
 include 'ch02-singleton:ex02-lazy-loading'

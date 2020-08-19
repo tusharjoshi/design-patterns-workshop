@@ -1,5 +1,23 @@
 === Open Close Principle
 (((Open Close Principle)))
+--
+.Bertrand Mayer definition
+
+From his 1988 book, Object-Oriented Software Construction (Prentice Hall), defined the open/closed principle (OCP) as follows:
+
+Software entities should be open for extension, but closed for modification.
+--
+
+--
+.Robert C. Martin definition
+
+“Open for extension.” This means that the behavior of the module can be extended. As the requirements of the application change, we are able to extend the module with new behaviors that satisfy those changes. In other words, we are able to change what the module does.
+
+“Closed for modification.” Extending the behavior of a module does not result in changes to the source or binary code of the module. The binary executable version of the module, whether in a linkable library, a DLL, or a Java .jar, remains untouched.
+
+—Robert C. Martin, Agile Software Development: Principles, Patterns, and Practices (Prentice Hall, 2003)
+--
+
 Open Close Principle advocates class to be open for extension but closed for modifications.  To enhance the functionality the design should allow additions of new functionality by adding new files to the code, instead of modifying an existing file.
 
 ==== Switch Unclean Example
@@ -8,7 +26,7 @@ The logic in the example below in `DiscountCalculator` is based on month number.
 
 Just to change one rule if we touch the file `DiscountCalculator` we will have to regression test all the rules to make sure nothing is broken in other parts which are also in the same file.
 
-=== UML Representation
+==== UML Representation
 
 [plantuml, switch-unclean, png]
 ----
@@ -37,7 +55,7 @@ If we need to change an existing rule only one existing class needs changes and 
 
 For addition of new rule we need to add a new class implementation of strategy and add it to the map.  Again retesting of existing rules is not needed, as `DiscountCalculator` class is now open to extension but closed to modification.
 
-=== UML Representation
+==== UML Representation
 
 [plantuml, switch-clean, png]
 ----
