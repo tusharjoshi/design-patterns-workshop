@@ -1,0 +1,49 @@
+[[ch15-iterator]]
+== Iterator Pattern
+
+=== GoF Definition
+
+Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+(Also known as Cursor)
+
+=== Basic Components
+
+[plantuml, iterator-components, png]
+----
+interface IIterator {
+    +boolean hasNext()
+    +Component getCurrentItem()
+    +void next()
+}
+class Component {
+    +IIterator getIterator()
+}
+class Client
+class ComponentIterator
+IIterator <|.. ComponentIterator
+ComponentIterator <-- Component
+IIterator <-- Client
+Component <-- Client
+----
+
+=== UML Representation
+
+[plantuml, iterator-example, png]
+----
+interface Iterable<Integer> {
+    +Iterator<Integer> iterator()
+}
+interface Iterator<Integer> {
+    +boolean hasNext()
+    +Integer next()
+}
+class LeapYearIterator
+class LeapYearSet
+class Client
+Iterator <|.. LeapYearIterator
+Iterable <|.. LeapYearSet
+Iterator <-- LeapYearSet
+LeapYearIterator <-- LeapYearSet
+Iterator <-- Client
+LeapYearSet <-- Client
+----

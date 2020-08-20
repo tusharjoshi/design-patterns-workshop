@@ -49,3 +49,9 @@ include 'ch11-decorator:ex01-anti-corruption'
 include 'ch12-facade:ex01-markup'
 
 include 'ch13-flyweight:ex01'
+
+include 'ch14-memento:ex01'
+
+include 'ch15-iterator:ex01'
+
+include 'ch16-observer:ex01'

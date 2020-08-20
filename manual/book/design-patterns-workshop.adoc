@@ -47,6 +47,12 @@ include::ch12-facade/ch12-facade.adoc[]
 
 include::ch13-flyweight/ch13-flyweight.adoc[]
 
+include::ch14-memento/ch14-memento.adoc[]
+
+include::ch15-iterator/ch15-iterator.adoc[]
+
+include::ch16-observer/ch16-observer.adoc[]
+
 include::example-conventions.adoc[]
 
 include::references.adoc[]
