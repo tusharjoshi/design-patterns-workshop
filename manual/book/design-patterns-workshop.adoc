@@ -53,6 +53,8 @@ include::ch15-iterator/ch15-iterator.adoc[]
 
 include::ch16-observer/ch16-observer.adoc[]
 
+include::ch17-interpreter/ch17-interpreter.adoc[]
+
 include::example-conventions.adoc[]
 
 include::references.adoc[]

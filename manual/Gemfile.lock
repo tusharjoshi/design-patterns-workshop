@@ -24,8 +24,6 @@ GEM
       thread_safe (~> 0.3.0)
       treetop (~> 1.6.0)
       ttfunk (~> 1.5.0, >= 1.5.1)
-    asciidoctor-plantuml (0.0.12)
-      asciidoctor (>= 1.5.6, < 3.0.0)
     awesome_print (1.8.0)
     coderay (1.1.3)
     concurrent-ruby (1.1.6)
@@ -88,7 +86,6 @@ DEPENDENCIES
   asciidoctor-diagram
   asciidoctor-epub3 (~> 1.5.0.alpha.18)
   asciidoctor-pdf (~> 1.5.3)
-  asciidoctor-plantuml
   awesome_print
   coderay
   epubcheck
