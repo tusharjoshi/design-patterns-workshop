@@ -1,0 +1,100 @@
+[[ch20-chain]]
+== Chain of Responsibility Pattern
+
+=== GoF Definition
+
+Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
+
+==== Basic Components
+
+[plantuml, chain-components, png]
+----
+class Handler {
+    -Handler nextHandler
+}
+class ConcreteHandler1
+class ConcreteHandler2
+class Client
+Handler <--o Handler
+Handler <|-- ConcreteHandler1
+Handler <|-- ConcreteHandler2
+Handler <-- Client
+----
+
+==== UML Representation
+
+[plantuml, authenticator-components, png]
+----
+interface IAuthenticator {
+    -IAuthenticator nextAuthenticator
+    +Response authenticate(Request request)
+}
+abstract class AbstractAuthenticator
+class CustomerAuthenticator
+class EmployeeAuthenticator
+class NoUserAuthenticator
+class Request
+class Response
+class LoginService
+class Client
+IAuthenticator <|.. AbstractAuthenticator
+AbstractAuthenticator <|-- CustomerAuthenticator
+AbstractAuthenticator <|-- EmployeeAuthenticator
+AbstractAuthenticator <|-- NoUserAuthenticator
+IAuthenticator --> Request
+IAuthenticator --> Response
+IAuthenticator <-- LoginService
+LoginService <-- Client
+CustomerAuthenticator <-- Client
+EmployeeAuthenticator <-- Client
+NoUserAuthenticator <-- Client
+Request <-- LoginService
+Response <-- LoginService
+Request <-- Client
+Response <-- Client
+----
+
+[source,java]
+----
+include::../../../ch20-chain/ex01/src/main/java/com/company/example/Request.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch20-chain/ex01/src/main/java/com/company/example/Response.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch20-chain/ex01/src/main/java/com/company/example/IAuthenticator.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch20-chain/ex01/src/main/java/com/company/example/AbstractAuthenticator.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch20-chain/ex01/src/main/java/com/company/example/CustomerAuthenticator.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch20-chain/ex01/src/main/java/com/company/example/EmployeeAuthenticator.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch20-chain/ex01/src/main/java/com/company/example/NoUserAuthenticator.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch20-chain/ex01/src/main/java/com/company/example/LoginService.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch20-chain/ex01/src/test/java/com/company/example/LoginServiceTest.java[tags=source]
+----

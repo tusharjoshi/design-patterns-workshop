@@ -9,7 +9,8 @@ public class TimesNode extends AbstractNode {
     }
 
     public Double interprete(IContext context, INotification notification) {
-        return leftNode.interprete(context, notification) * rightNode.interprete(context, notification);
+        return leftNode.interprete(context, notification)
+            * rightNode.interprete(context, notification);
     }
 }
 // end::source[]

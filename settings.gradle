@@ -57,3 +57,17 @@ include 'ch15-iterator:ex01'
 include 'ch16-observer:ex01'
 
 include 'ch17-interpreter:ex01'
+
+include 'ch18-mediator:ex01'
+
+include 'ch19-command:ex01'
+
+include 'ch20-chain:ex01'
+
+include 'ch21-state:ex01'
+
+include 'ch22-strategy:ex01'
+
+include 'ch23-template:ex01'
+
+include 'ch24-visitor:ex01'

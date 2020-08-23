@@ -55,6 +55,20 @@ include::ch16-observer/ch16-observer.adoc[]
 
 include::ch17-interpreter/ch17-interpreter.adoc[]
 
+include::ch18-mediator/ch18-mediator.adoc[]
+
+include::ch19-command/ch19-command.adoc[]
+
+include::ch20-chain/ch20-chain.adoc[]
+
+include::ch21-state/ch21-state.adoc[]
+
+include::ch22-strategy/ch22-strategy.adoc[]
+
+include::ch23-template/ch23-template.adoc[]
+
+include::ch24-visitor/ch24-visitor.adoc[]
+
 include::example-conventions.adoc[]
 
 include::references.adoc[]

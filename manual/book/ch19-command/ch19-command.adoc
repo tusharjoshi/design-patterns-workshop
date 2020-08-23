@@ -1,0 +1,49 @@
+[[ch19-command]]
+== Command Pattern
+
+=== GoF Definition
+
+Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.
+
+==== Basic Components
+
+[plantuml, command-components, png]
+----
+class Command {
+    +execute()
+}
+class ConcreteCommand
+class Invoker
+class Receiver
+class Client
+Command <--* Invoker
+Command <|-- ConcreteCommand
+ConcreteCommand --> Receiver
+Receiver <-- Client
+ConcreteCommand <.. Client
+----
+
+[source,java]
+----
+include::../../../ch19-command/ex01/src/main/java/com/company/example/Command.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch19-command/ex01/src/main/java/com/company/example/Button.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch19-command/ex01/src/main/java/com/company/example/Display.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch19-command/ex01/src/main/java/com/company/example/Calculator.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch19-command/ex01/src/test/java/com/company/example/CalculatorTest.java[tags=source]
+----

@@ -1,0 +1,56 @@
+[[ch18-mediator]]
+== Mediator Pattern
+
+=== GoF Definition
+
+Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.
+
+==== Basic Components
+
+[plantuml, mediator-components, png]
+----
+class Mediator
+class ConcreteMeditor
+class Colleague
+class ConcreteColleague1
+class ConcreteColleague2
+Mediator <|-u- ConcreteMeditor
+Colleague <|-u- ConcreteColleague1
+Colleague <|-u- ConcreteColleague2
+Mediator <-- Colleague
+ConcreteMeditor --> ConcreteColleague1
+ConcreteMeditor --> ConcreteColleague2
+----
+
+==== UML representation
+
+[plantuml, mediator-calculator, png]
+----
+class Calculator
+class Button
+class Display
+Calculator *--> Button
+Calculator *--> Display
+Calculator <--* Button
+Calculator <--* Display
+----
+
+[source,java]
+----
+include::../../../ch18-mediator/ex01/src/main/java/com/company/example/Display.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch18-mediator/ex01/src/main/java/com/company/example/Button.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch18-mediator/ex01/src/main/java/com/company/example/Calculator.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch18-mediator/ex01/src/test/java/com/company/example/CalculatorTest.java[tags=source]
+----

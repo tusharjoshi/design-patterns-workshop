@@ -20,3 +20,4 @@
 * https://stackabuse.com/tag/design-patterns/[Design Pattern tag articles on StackAbuse.com site] https://stackabuse.com/structural-design-patterns-in-java/[Structural] https://stackabuse.com/behavioral-design-patterns-in-java/[Behavioral] https://stackabuse.com/design-patterns-in-java/[Catalog]
 * https://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries/[Examples from JDK community post on StackOverflow.com]
 * https://iknown.blogspot.com/2003/08/design-patterns.html[Popular mnemonic for Design Patterns] from https://www.linkedin.com/in/amungale/[Ajit Mungale] from 2003
+* https://jeffreykegler.github.io/Ocean-of-Awareness-blog/individual/2013/03/interpreter.html[About Interpreter Pattern and its difficult nature.]
