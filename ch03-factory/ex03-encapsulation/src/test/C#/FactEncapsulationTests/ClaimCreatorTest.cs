@@ -1,17 +1,17 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using LooseCoupling;
+using FactUsingEncapsulation;
 
 namespace LooseCouplingTests
 {
     [TestClass]
-    public class SomeFeatureTest
+    public class ClaimCreatorTest
     {
-        private SomeFeatureTest target;
+        private ClaimCreator target;
 
         [TestInitialize()]
         public void SetUp()
         {
-            target = new SomeFeatureTest();
+            target = new ClaimCreator();
         }
 
         [TestMethod]
