@@ -44,3 +44,5 @@ xUnit test framework is used to create test cases.
 		https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test
 	2. Working with GitHub in Visual Studio 2019
 		https://azuredevopslabs.com/labs/devopsserver/github/
+	3. Working with forks in GitHub with Visual Studio 2019
+		http://doc.fireflymigration.com/working-with-github-fork-in-visual-studio.html
