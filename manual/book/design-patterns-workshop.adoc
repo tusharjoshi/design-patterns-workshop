@@ -75,4 +75,6 @@ include::references.adoc[]
 
 include::A-mnemonic/A-mnemonic.adoc[]
 
+include::B-ast/B-ast.adoc[]
+
 ifdef::index[include::index.adoc[]]
