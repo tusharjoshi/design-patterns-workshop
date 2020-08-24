@@ -1,5 +1,16 @@
 rootProject.name = 'design-pattern-examples'
 
+
+include 'ch01-solid-principles:s01-single-responsibility:ex01-all-in-one'
+include 'ch01-solid-principles:s01-single-responsibility:ex02-single-reponsibility'
+include 'ch01-solid-principles:s02-open-close:ex01-switch-unclean'
+include 'ch01-solid-principles:s02-open-close:ex02-switch-clean'
+include 'ch01-solid-principles:s03-liskov-substitution:ex01-rectangle'
+include 'ch01-solid-principles:s04-interface-segregation:ex01-without-segregation'
+include 'ch01-solid-principles:s04-interface-segregation:ex01-with-segregation'
+include 'ch01-solid-principles:s05-dependency-inversion:ex01-without-injection'
+include 'ch01-solid-principles:s05-dependency-inversion:ex01-with-injection'
+
 include 'ch02-singleton:ex01-eager-initialization'
 include 'ch02-singleton:ex02-lazy-loading'
 include 'ch02-singleton:ex03-double-check'
@@ -7,4 +18,56 @@ include 'ch02-singleton:ex04-static-helper'
 include 'ch02-singleton:ex05-interface-based'
 include 'ch02-singleton:ex06-springboot'
 
-include 'ch03-factory:ex01'
+include 'ch03-factory:ex01-basic-factory'
+include 'ch03-factory:ex02-loose-coupling'
+include 'ch03-factory:ex03-encapsulation'
+
+include 'ch04-abstract-factory:ex01-ui-tools-factory'
+include 'ch04-abstract-factory:ex02-interface-separation:core'
+include 'ch04-abstract-factory:ex02-interface-separation:basic'
+include 'ch04-abstract-factory:ex02-interface-separation:advanced'
+include 'ch04-abstract-factory:ex02-interface-separation:application'
+
+include 'ch05-builder:ex01-resume-builder'
+include 'ch05-builder:ex02-constructor-chaining'
+include 'ch05-builder:ex03-person-builder'
+include 'ch05-builder:ex04-fluent-builder'
+
+include 'ch06-prototype:ex01'
+
+include 'ch07-adapter:ex01:library'
+include 'ch07-adapter:ex01:example'
+
+include 'ch08-bridge:ex01-inheritance'
+include 'ch08-bridge:ex02-bridge'
+
+include 'ch10-composite:ex01'
+
+include 'ch11-decorator:ex01-logger'
+include 'ch11-decorator:ex01-anti-corruption'
+
+include 'ch12-facade:ex01-markup'
+
+include 'ch13-flyweight:ex01'
+
+include 'ch14-memento:ex01'
+
+include 'ch15-iterator:ex01'
+
+include 'ch16-observer:ex01'
+
+include 'ch17-interpreter:ex01'
+
+include 'ch18-mediator:ex01'
+
+include 'ch19-command:ex01'
+
+include 'ch20-chain:ex01'
+
+include 'ch21-state:ex01'
+
+include 'ch22-strategy:ex01'
+
+include 'ch23-template:ex01'
+
+include 'ch24-visitor:ex01'

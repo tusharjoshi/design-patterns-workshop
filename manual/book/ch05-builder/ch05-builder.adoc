@@ -1,0 +1,82 @@
+[[ch05-builder]]
+== Builder Pattern
+
+=== GoF Definition
+
+Separate the construction of a complex object from its representation so that the same construction processes can create different representations.
+
+=== UML Interpretation
+
+[plantuml, builder, png]
+----
+class Product
+interface Builder
+class ConcreteBuilder
+class Director
+Director o-- Builder
+Builder <|-- ConcreteBuilder
+ConcreteBuilder --> Product
+----
+
+=== Resume Builder Example
+(((Builder, Resume Builder Example)))
+
+
+[plantuml, resume-builder, png]
+----
+interface IResumeBuilder {
+    Resume build()
+}
+class Resume
+class AbstractResumeBuilder
+class ResumeMaker
+class ProfessionalResumeBuilder
+class SocialResumeBuilder
+IResumeBuilder <|.. AbstractResumeBuilder
+AbstractResumeBuilder <|-- ProfessionalResumeBuilder
+AbstractResumeBuilder <|-- SocialResumeBuilder
+ResumeMaker --> IResumeBuilder
+IResumeBuilder --> Resume
+----
+
+[source,java]
+----
+include::../../../ch05-builder/ex01-resume-builder/src/main/java/com/example/IResumeBuilder.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch05-builder/ex01-resume-builder/src/main/java/com/example/Resume.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch05-builder/ex01-resume-builder/src/main/java/com/example/AbstractResumeBuilder.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch05-builder/ex01-resume-builder/src/main/java/com/example/ResumeMaker.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch05-builder/ex01-resume-builder/src/main/java/com/example/ProfessionalResumeBuilder.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch05-builder/ex01-resume-builder/src/main/java/com/example/SocialResumeBuilder.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch05-builder/ex01-resume-builder/src/test/java/com/example/ResumeMakerTest.java[tags=source]
+----
+
+
+=== Builder instances in JDK
+
+* java.lang.StringBuilder#append()
+* java.lang.StringBuffer#append()
+* java.nio.ByteBuffer#put()

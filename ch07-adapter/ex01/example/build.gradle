@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '14'
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+    implementation project(':ch07-adapter:ex01:library')
+}
+
+test {
+    useJUnitPlatform()
+}

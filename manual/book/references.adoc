@@ -1,16 +1,23 @@
 [references]
 == References
 
-Abran, Alain, editor. Guide to the Software Engineering Body of Knowledge, 2004 Version: SWEBOK ; a Project of the IEEE Computer Society Professional Practices Committee. IEEE Computer Society, 2004.
-
-Freeman, Eric, et al., editors. Head First Design Patterns. O’Reilly, 2004.
-
-Gamma, Erich, editor. Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley, 1995.
-
-Sarcar, Vaskaran. Java Design Patterns: A Tour of 23 Gang of Four Design Patterns in Java. Apress, 2016.
-
-Timms, Simon. Mastering Javascript Design Patterns. Packt Publishing, 2014.
-
-Martin, Robert C., editor. Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall, 2009.
-
-Hall, Gary McLean. Adaptive Code: Agile Coding with Design Patterns and SOLID Principles. Second edition, Microsoft Press, 2017.
+* Abran, Alain, editor. Guide to the Software Engineering Body of Knowledge, 2004 Version: SWEBOK ; a Project of the IEEE Computer Society Professional Practices Committee. IEEE Computer Society, 2004.
+* Freeman, Eric, et al., editors. Head First Design Patterns. O’Reilly, 2004.
+* Gamma, Erich, editor. Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley, 1995.
+* Sarcar, Vaskaran. Java Design Patterns: A Tour of 23 Gang of Four Design Patterns in Java. Apress, 2016.
+* Timms, Simon. Mastering Javascript Design Patterns. Packt Publishing, 2014.
+* Martin, Robert C., editor. Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall, 2009.
+* Hall, Gary McLean. Adaptive Code: Agile Coding with Design Patterns and SOLID Principles. Second edition, Microsoft Press, 2017.
+* Evans, Eric. Domain-Driven Design: Tackling Complexity in the Heart of Software. Addison-Wesley, 2004.
+* Leitner, Helmut. Pattern Theory: Introduction and Perspectives on the Tracks of Christopher Alexander. First printing, Helmut Leitner, HLS Software, 2015.
+* Thomas, David, and Andrew Hunt. The Pragmatic Programmer, 20th Anniversary Edition: Journey to Mastery. Second edition, Addison-Wesley, 2019.
+* http://ftacademy.org/sites/ftacademy.org/files/materials/fta-m11-soft_arch-pre.pdf[Software Architecture Guide by Free Technology Academy]
+* https://martinfowler.com/eaaCatalog/[Martin Fowler's Catalog of Patterns of Enterprise Application Architecture]
+* http://coding-geek.com/category/design-pattern/[Coding Geek] Design Pattern category posts
+* https://refactoring.guru/design-patterns/abstract-factory/java/example[Refactoring Guru] Design Patterns Catalog
+* https://martinfowler.com/articles/writingPatterns.html[Martin Fowlers Article on Patterns]
+* https://hillside.net/index.php/a-pattern-language-for-pattern-writing[A Pattern Language for Pattern Writing] by Gerard Meszaros, Jim Doble
+* https://stackabuse.com/tag/design-patterns/[Design Pattern tag articles on StackAbuse.com site] https://stackabuse.com/structural-design-patterns-in-java/[Structural] https://stackabuse.com/behavioral-design-patterns-in-java/[Behavioral] https://stackabuse.com/design-patterns-in-java/[Catalog]
+* https://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries/[Examples from JDK community post on StackOverflow.com]
+* https://iknown.blogspot.com/2003/08/design-patterns.html[Popular mnemonic for Design Patterns] from https://www.linkedin.com/in/amungale/[Ajit Mungale] from 2003
+* https://jeffreykegler.github.io/Ocean-of-Awareness-blog/individual/2013/03/interpreter.html[About Interpreter Pattern and its difficult nature.]

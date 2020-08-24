@@ -5,6 +5,19 @@
 
 Ensure a class only has one instance, and provide a global point of access to it.
 
+=== UML Representation
+
+[plantuml, singleton, png]
+----
+class Cache {
+    {static} -Cache INSTANCE
+    {static} Cache getInstance()
+}
+class Application
+Cache *--> Cache
+Application --> Cache
+----
+
 === Eager Initialization
 
 (((Singleton, Eager Initialization)))
@@ -51,8 +64,8 @@ include::../../../ch02-singleton/ex05-interface-based/src/main/java/com/example/
 ----
 
 === Spring Boot Version
-
 (((Singleton, Spring Boot Version)))
+
 .Cache.java
 [source,java]
 ----
@@ -93,7 +106,7 @@ If the singleon class supports serialization then it can be serialized and deser
 
 === Singleton Instances in JDK
 
-(((SIngleton, JDK Examples)))
+(((Singleton, JDK Examples)))
 Singleton examples in Java core libraries:
 
 * java.lang.Runtime#getRuntime()

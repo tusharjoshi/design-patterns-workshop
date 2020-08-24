@@ -1,0 +1,5 @@
+[conventions]
+== Example Conventions
+
+* https://github.com/mvonballmo/CSharpHandbook[CSharpHandbook on Github by Marco van Ballmoose]
+* https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/[Microsoft Framework Design Guidelines]

@@ -10,9 +10,6 @@ bin/
 .classpath
 .project
 .settings/
-/.vs
-/C#/ch02-singleton/ex01-eager-initialization/src/.vs/src
-/C#/ch02-singleton/ex01-eager-initialization/src/Main/obj/Debug/netstandard2.0
-/C#/ch02-singleton/ex01-eager-initialization/src/Main/obj/Release/netstandard2.0
-/C#/ch02-singleton/ex01-eager-initialization/src/Main/obj
-/C#/ch02-singleton/ex01-eager-initialization/src/Main.Tests/obj
+
+# macOs specific
+.DS_Store

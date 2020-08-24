@@ -1,0 +1,136 @@
+[[ch04-abstract-factory]]
+== Abstract Factory Pattern
+
+=== GoF Definition
+
+Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+=== Block Diagram
+
+.Image Components of Abstract Factory Pattern
+image::ch04-abstract-factory/abstract-factory.png[Abstract Factory Pattern Components.]
+
+=== UML Representation
+
+[plantuml, abstract-factory, png]
+----
+interface IUIToolsFactory
+interface IMenuList
+interface IShape
+interface IToolButton
+class BasicToolsFactory
+class AdvancedToolsFactory
+class BasicShape
+class BasicToolButton
+class BasicMenuList
+class AdvancedShape
+class AdvancedToolButton
+class AdvancedMenuList
+class Application
+IUIToolsFactory <|.. BasicToolsFactory
+IUIToolsFactory <|.. AdvancedToolsFactory
+IMenuList <|.. BasicMenuList
+IShape <|.. BasicShape
+IToolButton <|.. BasicToolButton
+IMenuList <|.. AdvancedMenuList
+IShape <|.. AdvancedShape
+IToolButton <|.. AdvancedToolButton
+IMenuList <-- IUIToolsFactory
+IShape <-- IUIToolsFactory
+IToolButton <-- IUIToolsFactory
+IUIToolsFactory <-- Application
+----
+
+=== UI Tools Example
+(((Abstract Factory, UI Tools Example)))
+`IUIToolsFactory` is public contract for any factory to satisfy.  Any class implementing this interface agrees to provide a factory for three product interfaces `IShape`, `IToolButton` and `IMenuList`.
+
+A set of Factory class and concrete product classes is created as one option for the factory implementation.
+
+Similarly another Factory implementation is made available which can be replaced in the constructor of `Application` class to switch the products from one set of or family of products to another family of products.
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/Application.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IUIToolsFactory.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IMenuList.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IToolButton.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IShape.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/factory/basic/BasicToolsFactory.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/factory/advanced/AdvancedToolsFactory.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/test/java/com/example/ApplicationTest.java[tags=source]
+----
+
+=== Separate Interface.footnote:[Pattern from Martin Fowlers Catalog of Patterns of Entreprise Application Architecture]
+
+[plantuml, abstract-factory-intf-sep, png]
+----
+package com.example.core {
+    interface IUIToolsFactory
+    interface IMenuList
+    interface IShape
+    interface IToolButton
+}
+package com.example.factory.basic {
+    class BasicToolsFactory
+    class BasicShape
+    class BasicToolButton
+    class BasicMenuList
+}
+package com.example.factory.advanced {
+    class AdvancedToolsFactory
+    class AdvancedShape
+    class AdvancedToolButton
+    class AdvancedMenuList
+}
+package com.example {
+    class Application
+}
+IUIToolsFactory <|.. BasicToolsFactory
+IUIToolsFactory <|.. AdvancedToolsFactory
+IMenuList <|.. BasicMenuList
+IShape <|.. BasicShape
+IToolButton <|.. BasicToolButton
+IMenuList <|.. AdvancedMenuList
+IShape <|.. AdvancedShape
+IToolButton <|.. AdvancedToolButton
+IMenuList <-- IUIToolsFactory
+IShape <-- IUIToolsFactory
+IToolButton <-- IUIToolsFactory
+IUIToolsFactory <-- Application
+----
+
+
+=== Abstract Factory instances in JDK
+
+* javax.xml.parsers.DocumentBuilderFactory#newInstance()
+* javax.xml.transform.TransformerFactory#newInstance()
+* javax.xml.xpath.XPathFactory#newInstance()

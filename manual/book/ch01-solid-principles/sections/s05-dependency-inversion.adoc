@@ -1,8 +1,101 @@
 === Dependency Inversion Principle
 
 (((Dependency Inversion Principle)))
-Dependency Inversion Principle introduction
+Dependency users should not create dependencies, but should reference the dependencies as interface references.
+The dependencies shall be injected by the calling context.
+This principle makes the objects loosely coupled and testable.
 
-(((Dependency Inversion Principle,do one thing)))
-concept
+==== Basic Components
+
+[plantuml, dependency-injection, png]
+----
+interface IDependency
+class DependencyImpl
+class DependencyUser
+class Application
+IDependency <|.. DependencyImpl
+IDependency <--* DependencyUser
+IDependency <-- Application
+DependencyImpl <-- Application
+DependencyUser <-- Application
+----
+
+==== Example Without DI
+
+[plantuml, dependency-without-injection, png]
+----
+class Repository
+class Controller
+class Order
+class Application
+Repository <--* Controller
+Order <-- Repository
+Order <-- Controller
+Order <-- Application
+Controller <-- Application
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s05-dependency-inversion/ex01-without-injection/src/main/java/com/company/example/Order.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s05-dependency-inversion/ex01-without-injection/src/main/java/com/company/example/Repository.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s05-dependency-inversion/ex01-without-injection/src/main/java/com/company/example/Controller.java[tags=source]
+----
+
+<1> Repository object created here binds this class with the dependency
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s05-dependency-inversion/ex01-without-injection/src/test/java/com/company/example/ControllerTest.java[tags=source]
+----
+
+==== Example With DI
+
+[plantuml, dependency-with-injection, png]
+----
+class Repository
+class Controller {
+    -Repository repository
+    +Controller(Repository repository)
+}
+class Order
+class Application
+Repository <--* Controller
+Order <-- Repository
+Order <-- Controller
+Order <-- Application
+Controller <-- Application
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s05-dependency-inversion/ex02-with-injection/src/main/java/com/company/example/Order.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s05-dependency-inversion/ex02-with-injection/src/main/java/com/company/example/Repository.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s05-dependency-inversion/ex02-with-injection/src/main/java/com/company/example/Controller.java[tags=source]
+----
+
+<1> Controller is expecting dependency to be injected here
+
+[source,java]
+----
+include::../../../../ch01-solid-principles/s05-dependency-inversion/ex02-with-injection/src/test/java/com/company/example/ControllerTest.java[tags=source]
+----
+
+<1> Dependency is injected like this by the Application
 

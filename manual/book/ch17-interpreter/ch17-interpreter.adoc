@@ -1,0 +1,103 @@
+[[ch17-interpreter]]
+== Interpreter Pattern
+
+=== GoF Definition
+
+Given a language, define a represention for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
+
+=== Basic Components
+
+[plantuml, interpeter-components, png]
+----
+interface IContext
+abstract class AbstractExpression {
+    +interprete(IContext context)
+}
+class TerminalExpression
+class NonTerminalExpression
+class Context
+class Client
+IContext <|.. Context
+AbstractExpression <|-- TerminalExpression
+AbstractExpression <|-- NonTerminalExpression
+IContext <-- AbstractExpression
+IContext <-- Client
+AbstractExpression <-- Client
+Context <-- Client
+----
+
+=== Custom DSL and Evaluation
+
+For this example we consider a custom DSL for creating expressions which could be evaluated.
+The DSL will have elements separated by space, which will help us tokenize the expression quickly.
+
+Operators we will recognize
+
+* plus - for addition
+* minus - for substraction
+* times - for multiplication
+* by - for division
+* ( - for open parenthesis
+* ) - for closed parenthesis
+
+All other characters will be considered as either variables or numbers.
+If the character sequence could be parsed into a number it will be assumed as number.
+If the character sequence is not parseable as number it will be considered as a variable.
+The value of variable will be fetched from the context later while interpreting time.
+
+.Example Expression
+--
+2 plus ( 9 minus 2 ) times 10
+--
+
+This expression shall be converted into Abstract Syntax Tree (AST) so the root of the tree can be called.
+The root of the tree when called with interprete method will delegate the inpretation to all child elements.
+
+[plantuml, expression-map, png]
+----
+@startmindmap
+* Expression
+** times
+*** 10
+*** plus
+**** minus
+***** 2
+***** 9
+**** 2
+@endmindmap
+----
+
+[plantuml, expression-classes, png]
+----
+interface IContext
+interface IExpressionNode {
+    -IExpressionNode leftNode
+    -IExpressionNode rightNode
+    -String name
+    -Double value
+    +Double interprete(IContext context)
+}
+abstract class AbstractNode
+abstract class AbstractBinaryNode
+class PlusNode
+class MinusNode
+class TimesNode
+class ByNode
+class OpenParenNode
+class CloseParenNode
+class ValueNode
+class VariableNode
+class RaisedtoNode
+IExpressionNode <|.. AbstractNode
+AbstractNode <|-- AbstractBinaryNode
+AbstractBinaryNode <|-- PlusNode
+AbstractBinaryNode <|-- MinusNode
+AbstractBinaryNode <|-- TimesNode
+AbstractBinaryNode <|-- ByNode
+AbstractBinaryNode <|-- RaisedtoNode
+AbstractNode <|-- OpenParenNode
+AbstractNode <|-- CloseParenNode
+AbstractNode <|-- ValueNode
+AbstractNode <|-- VariableNode
+IContext <-- IExpressionNode
+----

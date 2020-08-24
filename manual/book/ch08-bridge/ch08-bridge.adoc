@@ -1,0 +1,123 @@
+[[ch08-bridge]]
+== Bridge Pattern
+
+=== GoF Definition
+
+Decouple an abstraction from its implementation so that the two can vary independently.
+
+=== Basic Concept
+
+Inheritance is a common way to specify different implementations of an abstraction. Using inheritance the implementations are  bound tightly to the abstraction,and it is difficult to modify them independently. The Bridge pattern provides an alternative to inheritance when there is more than one version of an abstraction.
+
+=== Components
+
+[plantuml, bridge-components, png]
+----
+interface IBridge {
+    +operation()
+}
+class BridgeImplA
+class BridgeImplB
+abstract class Abstraction {
+    IBridge bridge
+    +operation()
+}
+class ConcreteAbstraction
+class Application
+IBridge <|.. BridgeImplA
+IBridge <|.. BridgeImplB
+IBridge <--o Abstraction
+Abstraction <|-- ConcreteAbstraction
+ConcreteAbstraction <-- Application
+----
+
+=== Inheritance Example
+
+[plantuml, inheritance-bridge, png]
+----
+abstract class AbstractMessageSender {
+    +String post(String message)
+}
+abstract class TextMessageSender
+abstract class HTMLMessageSender
+class TextSMSSender
+class TextEmailSender
+class HTMLSMSSender
+class HTMLEmailSender
+class Application
+AbstractMessageSender <|-- TextMessageSender
+AbstractMessageSender <|-- HTMLMessageSender
+TextMessageSender <|-- TextSMSSender
+TextMessageSender <|-- TextEmailSender
+HTMLMessageSender <|-- HTMLSMSSender
+HTMLMessageSender <|-- HTMLEmailSender
+TextSMSSender <-- Application
+TextEmailSender <-- Application
+HTMLSMSSender <-- Application
+HTMLEmailSender <-- Application
+----
+
+=== Bridge Example
+
+[plantuml, bridge-example, png]
+----
+class MessageSender {
+    +String post(String message)
+}
+interface IMessageSender
+interface IMessageFormatter
+class TextFormatter
+class HTMLFormatter
+class SMSSender
+class EmailSender
+class Application
+IMessageSender <|.. SMSSender
+IMessageSender <|.. EmailSender
+IMessageFormatter <|.. TextFormatter
+IMessageFormatter <|.. HTMLFormatter
+MessageSender o-- IMessageSender
+MessageSender o-- IMessageFormatter
+MessageSender <-- Application
+IMessageSender <-- Application
+IMessageFormatter <-- Application
+----
+
+[source,java]
+----
+include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/IMessageSender.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/IMessageFormatter.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/MessageSender.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/TextFormatter.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/HTMLFormatter.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/SMSSender.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/EmailSender.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch08-bridge/ex02-bridge/src/test/java/com/company/example/MessageSenderTest.java[tags=source]
+----

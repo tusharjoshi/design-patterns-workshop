@@ -1,4 +1,6 @@
 [preface]
 == Preface
 
-The preface of the book will go here.
+The compilation of this manual started as a supplimentary documentation for Design Patterns Workshop.  This is an effort to compile enough available information relevant to the topic so it can be referred as a handy reference.
+
+The manual has been updated from the suggestions and discussions which happened in the Design Patterns Workshop conducted at Persistent Systems.

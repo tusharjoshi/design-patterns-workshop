@@ -1,0 +1,47 @@
+[[ch14-memento]]
+== Memento Pattern
+
+=== GoF Definition
+
+Without violating encapsulation, capture and externalize an object's internal state so that the object can be restored to this state later.
+
+=== Basic Components
+
+[plantuml, memento-components, png]
+----
+class Memento
+class Originator {
+    +Memento getMemento()
+    +void setMemento(Memento memento)
+}
+class CareTaker
+Memento <-- Originator
+Memento <--o CareTaker
+----
+
+=== UML Representation
+
+[plantuml, memento-example, png]
+----
+interface IPage {
+    +String getName()
+}
+interface IMemento
+class CartMemento
+class HomeMemento
+class ProductPage
+class CartPage
+class HomePage
+class Navigator
+IMemento <|.. ProductMemento
+IMemento <|.. CartMemento
+IMemento <|.. HomeMemento
+IPage <--* Navigator
+IMemento <--o Navigator
+IPage <|.. ProductPage
+IPage <|.. CartPage
+IPage <|.. HomePage
+ProductMemento <-- ProductPage
+CartMemento <-- CartPage
+HomeMemento <-- HomePage
+----

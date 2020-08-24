@@ -1,0 +1,6 @@
+[[ch24-visitor]]
+== Visitor Pattern
+
+=== GoF Definition
+
+Represent an operation to be performed on the elements of an object structure.Vis- itor lets you define a new operation without changing the classes of the elements on which it operates.

@@ -13,11 +13,11 @@ Tushar Joshi <tusharvjoshi@gmail.com>
 
 ifdef::ebook-format[:leveloffset: -1]
 
-// include::license.adoc[]
+include::license.adoc[]
 
-// include::preface.adoc[]
+include::preface.adoc[]
 
-// include::dedication.adoc[]
+include::dedication.adoc[]
 
 include::introduction.adoc[]
 
@@ -27,8 +27,54 @@ include::ch02-singleton/ch02-singleton.adoc[]
 
 include::ch03-factory/ch03-factory.adoc[]
 
+include::ch04-abstract-factory/ch04-abstract-factory.adoc[]
+
+include::ch05-builder/ch05-builder.adoc[]
+
+include::ch06-prototype/ch06-prototype.adoc[]
+
+include::ch07-adapter/ch07-adapter.adoc[]
+
+include::ch08-bridge/ch08-bridge.adoc[]
+
+include::ch09-proxy/ch09-proxy.adoc[]
+
+include::ch10-composite/ch10-composite.adoc[]
+
+include::ch11-decorator/ch11-decorator.adoc[]
+
+include::ch12-facade/ch12-facade.adoc[]
+
+include::ch13-flyweight/ch13-flyweight.adoc[]
+
+include::ch14-memento/ch14-memento.adoc[]
+
+include::ch15-iterator/ch15-iterator.adoc[]
+
+include::ch16-observer/ch16-observer.adoc[]
+
+include::ch17-interpreter/ch17-interpreter.adoc[]
+
+include::ch18-mediator/ch18-mediator.adoc[]
+
+include::ch19-command/ch19-command.adoc[]
+
+include::ch20-chain/ch20-chain.adoc[]
+
+include::ch21-state/ch21-state.adoc[]
+
+include::ch22-strategy/ch22-strategy.adoc[]
+
+include::ch23-template/ch23-template.adoc[]
+
+include::ch24-visitor/ch24-visitor.adoc[]
+
+include::example-conventions.adoc[]
+
 include::references.adoc[]
 
-// include::A-appendix/A-appendix.adoc[]
+include::A-mnemonic/A-mnemonic.adoc[]
+
+include::B-ast/B-ast.adoc[]
 
 ifdef::index[include::index.adoc[]]

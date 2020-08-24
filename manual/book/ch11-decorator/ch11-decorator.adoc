@@ -1,0 +1,122 @@
+[[ch11-decorator]]
+== Decorator Pattern
+
+=== GoF Definition
+
+Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+
+
+=== Basic Components
+
+[plantuml, decorator-components, png]
+----
+class Component {
+    +operation1()
+}
+class Decorator {
+    -Component component
+    +Decorator(Component component)
+}
+class SubDecorator1 {
+    +operation1()
+    +operation2()
+}
+class SubDecorator2 {
+    +operation1()
+    +operation3()
+    +operation4()
+}
+Component <|-- Decorator
+Component --* Decorator
+Decorator <|-- SubDecorator1
+Decorator <|-- SubDecorator2
+----
+
+=== UML Representation
+
+[plantuml, decorator-logger, png]
+----
+interface ILogger {
+    +log(String message)
+}
+class Logger
+class LoggerWrapper
+class User
+class Client
+ILogger <|.. Logger
+ILogger <|.. LoggerWrapper
+Logger <--* LoggerWrapper
+User <--* LoggerWrapper
+LoggerWrapper <-- Client
+----
+
+[source,java]
+----
+include::../../../ch11-decorator/ex01-logger/src/main/java/com/company/example/ILogger.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch11-decorator/ex01-logger/src/main/java/com/company/example/Logger.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch11-decorator/ex01-logger/src/main/java/com/company/example/User.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch11-decorator/ex01-logger/src/main/java/com/company/example/LoggerWrapper.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch11-decorator/ex01-logger/src/test/java/com/company/example/LoggerWrapperTest.java[tags=source]
+----
+
+=== Convinience Wrappers
+
+Decorator or Wrapper classes can be written for writing convinience methods over existing API services and libraries.  The operations needed in combination from the third party library can be created as an additional method of the wrapper.
+
+=== Anti Corruption Layer
+
+Wrapper classes can be written to abstract the third party service so it can be swapped with another service without impacting the rest of the project, as rest of the project only depends on the wrapper interface
+
+=== UML Representation
+
+[plantuml, decorator-anti-corruption, png]
+----
+interface ILogger {
+    +log(String message)
+}
+class LoggerV2
+class LoggerWrapper
+class User
+class Client
+ILogger <|.. LoggerWrapper
+LoggerV2 <--* LoggerWrapper
+User <--* LoggerWrapper
+LoggerWrapper <-- Client
+----
+
+[source,java]
+----
+include::../../../ch11-decorator/ex02-anti-corruption/src/main/java/com/company/example/LoggerV2.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch11-decorator/ex02-anti-corruption/src/main/java/com/company/example/LoggerWrapper.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch11-decorator/ex02-anti-corruption/src/test/java/com/company/example/LoggerWrapperTest.java[tags=source]
+----
+
+=== Decorator instances in JDK
+
+* java.io.InputStream
+* java.io.InputStreamReader
+* java.io.BufferedReader

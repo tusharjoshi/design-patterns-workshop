@@ -1,0 +1,60 @@
+[[ch12-facade]]
+== Facade Pattern
+
+=== GoF Definition
+
+Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
+
+=== Basic Components
+
+[plantuml, facade-components, png]
+----
+class Facade {
+    +operation()
+}
+class Service1 {
+    +operation1()
+    +operation2()
+}
+class Service2 {
+    +operation3()
+}
+class Client
+Facade --> Service1
+Facade --> Service2
+Client --> Facade
+----
+
+=== UML Representation
+
+[plantuml, facade-markup, png]
+----
+class HTMLElement {
+    -List<HTMLElement> children
+    +add(HTMLElement element)
+    +toString()
+}
+class BodyElement
+class PElement
+class TextElement
+class Markup {
+    +String createMarkup(String text)
+}
+class Client
+HTMLElement o-- HTMLElement : children
+HTMLElement <|-- BodyElement
+HTMLElement <|-- PElement
+HTMLElement <|-- TextElement
+HTMLElement <-- Markup
+Markup <-- Client
+----
+
+[source,java]
+----
+include::../../../ch12-facade/ex01-markup/src/main/java/com/company/example/Markup.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch12-facade/ex01-markup/src/test/java/com/company/example/MarkupTest.java[tags=source]
+----

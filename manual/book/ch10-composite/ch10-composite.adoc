@@ -1,0 +1,74 @@
+[[ch10-composite]]
+== Composite Pattern
+
+=== GoF Definition
+
+Compose objects into tree structures to represent part-whole hierarchies. Com- posite lets clients treat individual objects and compositions of objects uniformly.
+
+=== Basic Components
+
+[plantuml, composite-components, png]
+----
+class Component {
+    +operation()
+}
+class Leaf
+class Composite {
+    -List<Component> children
+    +operation(iterate on children)
+}
+class Client
+Component <|-- Leaf
+Component <|-- Composite
+Component --o Composite : children
+Component <-- Client
+----
+
+=== UML Representation
+
+[plantuml, html-element-composite, png]
+----
+class HTMLElement {
+    -List<HTMLElement> children
+    +add(HTMLElement element)
+    +toString()
+}
+class BodyElement
+class PElement
+class TextElement
+class Client
+HTMLElement o-- HTMLElement : children
+HTMLElement <|-- BodyElement
+HTMLElement <|-- PElement
+HTMLElement <|-- TextElement
+HTMLElement <-- Client
+----
+
+[source,java]
+----
+include::../../../ch10-composite/ex01/src/main/java/com/company/example/HTMLElement.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch10-composite/ex01/src/main/java/com/company/example/BodyElement.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch10-composite/ex01/src/main/java/com/company/example/PElement.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch10-composite/ex01/src/main/java/com/company/example/TextElement.java[tags=source]
+----
+
+[source,java]
+----
+include::../../../ch10-composite/ex01/src/test/java/com/company/example/HTMLElementTest.java[tags=source]
+----
+
+=== Proxy instances in JDK
+
+* java.awt.Container#add(Component)
