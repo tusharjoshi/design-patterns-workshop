@@ -4,3 +4,19 @@
 === GoF Definition
 
 Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
+
+==== Basic Components
+
+[plantuml, stats-components, png]
+----
+class State {
+    +handleOp1()
+    +handleOp2()
+}
+class ConcreteStateA
+class ConcreteStateB
+class Context
+State <|-- ConcreteStateA
+State <|-- ConcreteStateB
+State <--* Context : state
+----
