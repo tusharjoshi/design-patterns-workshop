@@ -66,8 +66,8 @@ include 'ch20-chain:ex01'
 
 include 'ch21-state:ex01'
 
-include 'ch22-strategy:ex01'
+include 'ch22-strategy:ex01-discount-strategy'
 
-include 'ch23-template:ex01'
+include 'ch23-template:ex01-template-method'
 
 include 'ch24-visitor:ex01'

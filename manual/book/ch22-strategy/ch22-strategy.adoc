@@ -4,3 +4,18 @@
 === GoF Definition
 
 Define a family of algorithms, encapsulate each one, and make them interchange- able. Strategy lets the algorithm vary independently from clients that use it.
+
+==== Basic Components
+
+[plantuml, strategy-components, png]
+----
+class Strategy {
+    +algorithm1()
+}
+class ConcreteStrategyA
+class ConcreteStrategyB
+class Context
+Strategy <|-- ConcreteStrategyA
+Strategy <|-- ConcreteStrategyB
+Strategy <--* Context : strategy
+----
