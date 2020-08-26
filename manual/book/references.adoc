@@ -11,6 +11,8 @@
 * Evans, Eric. Domain-Driven Design: Tackling Complexity in the Heart of Software. Addison-Wesley, 2004.
 * Leitner, Helmut. Pattern Theory: Introduction and Perspectives on the Tracks of Christopher Alexander. First printing, Helmut Leitner, HLS Software, 2015.
 * Thomas, David, and Andrew Hunt. The Pragmatic Programmer, 20th Anniversary Edition: Journey to Mastery. Second edition, Addison-Wesley, 2019.
+* Kerievsky, Joshua. Refactoring to Patterns. 5 print, Addison-Wesley, 2007.
+* Thomas, David, and Andrew Hunt. The Pragmatic Programmer, 20th Anniversary Edition: Journey to Mastery. Second edition, Addison-Wesley, 2019.
 * http://ftacademy.org/sites/ftacademy.org/files/materials/fta-m11-soft_arch-pre.pdf[Software Architecture Guide by Free Technology Academy]
 * https://martinfowler.com/eaaCatalog/[Martin Fowler's Catalog of Patterns of Enterprise Application Architecture]
 * http://coding-geek.com/category/design-pattern/[Coding Geek] Design Pattern category posts
@@ -21,3 +23,5 @@
 * https://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries/[Examples from JDK community post on StackOverflow.com]
 * https://iknown.blogspot.com/2003/08/design-patterns.html[Popular mnemonic for Design Patterns] from https://www.linkedin.com/in/amungale/[Ajit Mungale] from 2003
 * https://jeffreykegler.github.io/Ocean-of-Awareness-blog/individual/2013/03/interpreter.html[About Interpreter Pattern and its difficult nature.]
+* http://www.mcdonaldland.info/files/designpatterns/designpatternscard.pdf[Design Patterns Cheatsheet] by http://www.McDonaldLand.info[Jason S. McDonald]
+

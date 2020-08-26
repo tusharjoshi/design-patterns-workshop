@@ -7,7 +7,7 @@ Define the skeleton of an algorithm in an operation, deferring some steps to sub
 
 ==== Basic Components
 
-[plantuml, stats-components, png]
+[plantuml, template-components, png]
 ----
 class AbstractClass {
     #templateMethod1()
