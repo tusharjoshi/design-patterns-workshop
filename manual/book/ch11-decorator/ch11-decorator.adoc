@@ -75,9 +75,9 @@ include::../../../ch11-decorator/ex01-logger/src/main/java/com/company/example/L
 include::../../../ch11-decorator/ex01-logger/src/test/java/com/company/example/LoggerWrapperTest.java[tags=source]
 ----
 
-=== Convinience Wrappers
+=== Convenience Wrappers
 
-Decorator or Wrapper classes can be written for writing convinience methods over existing API services and libraries.  The operations needed in combination from the third party library can be created as an additional method of the wrapper.
+Decorator or Wrapper classes can be written for writing convenience methods over existing API services and libraries.  The operations needed in combination from the third party library can be created as an additional method of the wrapper.
 
 === Anti Corruption Layer
 
