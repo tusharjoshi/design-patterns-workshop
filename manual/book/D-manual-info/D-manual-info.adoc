@@ -1,0 +1,30 @@
+[[D-manual-info]]
+[appendix]
+== How this manual is created
+
+The content of this manual is written using a framework named https://asciidoctor.org/[Asciidoctor]
+
+--
+Asciidoctor is a fast, open source text processor and publishing toolchain for converting AsciiDoc content to HTML5, DocBook, PDF, and other formats. Asciidoctor is written in Ruby and runs on all major operating systems. The Asciidoctor project is hosted on GitHub.
+--
+
+Asciidoctor reads and parses text written in the AsciiDoc syntax, then feeds the parse tree to a set of built-in converters to produce HTML5, DocBook 5, and man(ual) page output.
+
+Using the asciidoctor framework and its plugins the content of this manual source is converted into HTML5, EPUB and PDF document.  The diarams which are written in PlantUML format are converted into images by using asciidoctor-diagram plugin
+
+=== How to build the manual
+
+The manual building step needs ruby to be installed on your system.  There are Gradle plugins to achieve the same thing and the source can be updated to Gradle build and any help PR is welcome in that area.
+
+To build the manual assuming ruby is already installed on system follow the following steps
+
+[source, bash]
+----
+cd manual # <1>
+bundle install # <2>
+bundle exec rake book:build # <3>
+----
+
+<1> change directory to manual directory
+<2> install all the dependencies
+<3> build the manual in build folder

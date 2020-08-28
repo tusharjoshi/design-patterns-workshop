@@ -1,0 +1,48 @@
+[[C-git-repo]]
+[appendix]
+== Maintaining multiple GIT repositories
+
+=== How this repository is maintained
+
+The GIT repository of this workshop is maintained at 3 servers simulteneously and maintained in all places at the same time.
+This is possible due to the flexibility in configuring the repository using GIT.
+This section explains how to configure a GIT repository to maintain in in multiple servers at same time
+
+=== Creating repository copies
+
+When the first repository is created then more repositories can be created by creating empty repositories on other servers and adding them as remotes to first repository.
+Assuming that the initial repository is at `git@github.com:<username>/<projectname>.git` (SSH Protocol is assumed here, but can also be done with https protocol) another empty repository should be created on another server.
+Here `<username>` is the user name of the user account on server.
+`<projectname>` is the name of the repository on the server.
+Assuming the another repository is at `git@gitlab.com:<username>/<projectname>.git`.  While creating another repository please choose not to create any README or LICENSE files so the repository will not have any initial commits.
+
+[source, bash]
+----
+git remote add gitlab git@gitlab.com:<username>/<projectname>.git # <1>
+git push gitlab master # <2>
+----
+
+<1> Add the additional server as another remote of the same initial repository
+<2> Push the current version to another server making both repositories same
+
+=== Configuring GIT for simultaneous push
+
+Addition of a new branch named `all` manually in the `.git/config` file ensures that we have a branch which can be used to push the commits to all the remote servers at the same time.  Open the config file at `.git/config` location and add the following section to it at the end
+
+[source,ini]
+----
+[remote "all"]
+	url = git@github.com:<username>/<projectname>.git
+	url = git@gitlab.com:<username>/<projectname>.git # <1>
+----
+
+<1> You can keep adding all the remote servers that have been added to the repository here one below the other to ensure push happens to all those servers.
+
+After this configuration when the user commits and pushes to this branch alias `all` the push happens for all servers.
+
+[source, bash]
+----
+git push all 
+----
+
+This command will push the commits to all the servers mentioned in the `all` branch configuration

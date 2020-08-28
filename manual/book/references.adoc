@@ -24,4 +24,5 @@
 * https://iknown.blogspot.com/2003/08/design-patterns.html[Popular mnemonic for Design Patterns] from https://www.linkedin.com/in/amungale/[Ajit Mungale] from 2003
 * https://jeffreykegler.github.io/Ocean-of-Awareness-blog/individual/2013/03/interpreter.html[About Interpreter Pattern and its difficult nature.]
 * http://www.mcdonaldland.info/files/designpatterns/designpatternscard.pdf[Design Patterns Cheatsheet] by http://www.McDonaldLand.info[Jason S. McDonald]
+* https://www.oodesign.com/[Design pattern examples at OODesign.com]
 

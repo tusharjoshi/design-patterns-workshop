@@ -6,6 +6,14 @@ public class TextElement extends HTMLElement {
         super(text);
     }
 
+    public String getText() {
+        return tagName;
+    }
+
+    public void setText(String text) {
+        tagName = text;
+    }
+
     public String toString() {
         return tagName;
     }

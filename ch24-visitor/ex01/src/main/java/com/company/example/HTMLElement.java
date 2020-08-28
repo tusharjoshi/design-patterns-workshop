@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 // tag::source[]
 public class HTMLElement {
-    String tagName;
+    protected String tagName;
     private List<HTMLElement> children = new ArrayList<>();
 
     public HTMLElement() {

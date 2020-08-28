@@ -77,4 +77,8 @@ include::A-mnemonic/A-mnemonic.adoc[]
 
 include::B-ast/B-ast.adoc[]
 
+include::C-git-repo/C-git-repo.adoc[]
+
+include::D-manual-info/D-manual-info.adoc[]
+
 ifdef::index[include::index.adoc[]]

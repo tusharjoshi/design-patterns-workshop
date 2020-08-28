@@ -1,6 +1,18 @@
 [preface]
 == Preface
 
+=== What is this manual about?
+
+This manual is compilation of defination, discussion and examples of 23 Design Patterns mentioned in the GoF Design Patterns book from 1994 by Kent Beck, Eric Gamma, et all.
+
 The compilation of this manual started as a supplimentary documentation for Design Patterns Workshop.  This is an effort to compile enough available information relevant to the topic so it can be referred as a handy reference.
 
 The manual has been updated from the suggestions and discussions which happened in the Design Patterns Workshop conducted at Persistent Systems.
+
+The examples referred in this manual are available at https://github.com/tusharjoshi/design-patterns-workshop[Github repository for the Design Patterns Workshop] also at https://gitlab.com/tusharjoshi/design-patterns-workshop[Gitlab] and https://bitbucket.org/tusharvjoshi/design-patterns-workshop[Bitbucket]
+
+=== Major Goal of this manual
+
+To maintain minimum one example for each design pattern from the initial 23 design patterns.  The examples are designed to be as near to the production code which can be used in projects.  Usage of apple, banana like examples which are created just to explain the design patterns are avoided.
+
+Basic examples and many examples are already available all over the internet and the books and articles mentioned in the reference section.
