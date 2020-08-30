@@ -102,7 +102,7 @@ Singleton objects can be instantiated using reflection and hence the objective c
 === Singleton and serialization
 
 (((Singleton, Serialization)))
-If the singleon class supports serialization then it can be serialized and deserialized to override the objective of maintaining one instance.
+If the singleton class supports serialization then it can be serialized and deserialized to override the objective of maintaining one instance.
 
 === Singleton Instances in JDK
 
