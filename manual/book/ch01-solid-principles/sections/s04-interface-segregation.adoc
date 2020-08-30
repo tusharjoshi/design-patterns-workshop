@@ -9,7 +9,7 @@ The following example contains an interface having four methods.
 Any implementation of the `ICRUDProvider` interface need to implement all four methods.
 Even if only one method is needed for the decoration `CachingCRUDProvider` needs to write delegating methods.
 This violated the interface segregation principle.
-The class has boilerplate code and unnecessary test cases need to be writen for this class.
+The class has boilerplate code and unnecessary test cases need to be written for this class.
 
 ==== UML representation
 

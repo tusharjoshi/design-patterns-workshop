@@ -3,7 +3,7 @@
 
 === GoF Definition
 
-Given a language, define a represention for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
+Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
 
 === Basic Components
 
@@ -34,7 +34,7 @@ The DSL will have elements separated by space, which will help us tokenize the e
 Operators we will recognize
 
 * plus - for addition
-* minus - for substraction
+* minus - for subtraction
 * times - for multiplication
 * by - for division
 * ( - for open parenthesis
