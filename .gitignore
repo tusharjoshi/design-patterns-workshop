@@ -4,6 +4,9 @@
 # Ignore Gradle build output directory
 build
 
+# Ruby specific
+vendor/
+manual/Gemfile.lock
 
 # IDE specific
 bin/

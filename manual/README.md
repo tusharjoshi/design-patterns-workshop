@@ -12,6 +12,16 @@ bundle install
 bundle exec rake book:build
 ```
 
+## Apple M1 Mac updates
+
+Nokogiri gen needs specific settings for installation on Apple M1 Macs [as mentioned here](https://www.jvt.me/posts/2022/05/01/nokogiri-m1-mac/)
+
+```bash
+bundle config force_ruby_platform true
+bundle install
+bundle exec rake book:build
+```
+
 Output shall be
 
 ```txt
