@@ -2,17 +2,9 @@
 
 Concepts and example code for design patterns workshop
 
-## Prerequisites
+## Example source code
 
-The concept discussed in this workshop are language agnostic.  The source code examples are build using `gradle` and dependent on `java` installation.  The manual is currently built using `ruby`
+The examples are available in the following language in the respective folder
 
-The following are the prerequisites for building the source code
-
-1. [Java 14](https://openjdk.java.net/projects/jdk/14/)
-2. [Gradle](https://gradle.org/)
-3. [Gng](https://github.com/gdubw/gng) (convinience helper to run graddle wrapper from any sub directory)
-
-For building manual the following prerequisites are needed
-
-1. Ruby
-2. Graphviz (For plantuml diagrams)
+1. Java
+2. Go
