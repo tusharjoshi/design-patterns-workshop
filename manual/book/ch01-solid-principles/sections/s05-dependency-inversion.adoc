@@ -37,24 +37,24 @@ Controller <-- Application
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s05-dependency-inversion/ex01-without-injection/src/main/java/com/company/example/Order.java[tags=source]
+include::../../../../java/ch01-solid-principles/s05-dependency-inversion/ex01-without-injection/src/main/java/com/company/example/Order.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s05-dependency-inversion/ex01-without-injection/src/main/java/com/company/example/Repository.java[tags=source]
+include::../../../../java/ch01-solid-principles/s05-dependency-inversion/ex01-without-injection/src/main/java/com/company/example/Repository.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s05-dependency-inversion/ex01-without-injection/src/main/java/com/company/example/Controller.java[tags=source]
+include::../../../../java/ch01-solid-principles/s05-dependency-inversion/ex01-without-injection/src/main/java/com/company/example/Controller.java[tags=source]
 ----
 
 <1> Repository object created here binds this class with the dependency
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s05-dependency-inversion/ex01-without-injection/src/test/java/com/company/example/ControllerTest.java[tags=source]
+include::../../../../java/ch01-solid-principles/s05-dependency-inversion/ex01-without-injection/src/test/java/com/company/example/ControllerTest.java[tags=source]
 ----
 
 ==== Example With DI
@@ -77,24 +77,24 @@ Controller <-- Application
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s05-dependency-inversion/ex02-with-injection/src/main/java/com/company/example/Order.java[tags=source]
+include::../../../../java/ch01-solid-principles/s05-dependency-inversion/ex02-with-injection/src/main/java/com/company/example/Order.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s05-dependency-inversion/ex02-with-injection/src/main/java/com/company/example/Repository.java[tags=source]
+include::../../../../java/ch01-solid-principles/s05-dependency-inversion/ex02-with-injection/src/main/java/com/company/example/Repository.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s05-dependency-inversion/ex02-with-injection/src/main/java/com/company/example/Controller.java[tags=source]
+include::../../../../java/ch01-solid-principles/s05-dependency-inversion/ex02-with-injection/src/main/java/com/company/example/Controller.java[tags=source]
 ----
 
 <1> Controller is expecting dependency to be injected here
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s05-dependency-inversion/ex02-with-injection/src/test/java/com/company/example/ControllerTest.java[tags=source]
+include::../../../../java/ch01-solid-principles/s05-dependency-inversion/ex02-with-injection/src/test/java/com/company/example/ControllerTest.java[tags=source]
 ----
 
 <1> Dependency is injected like this by the Application

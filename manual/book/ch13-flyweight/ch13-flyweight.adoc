@@ -35,17 +35,17 @@ Format <--o Client
 
 [source,java]
 ----
-include::../../../ch13-flyweight/ex01/src/main/java/com/company/example/Format.java[tags=source]
+include::../../../java/ch13-flyweight/ex01/src/main/java/com/company/example/Format.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch13-flyweight/ex01/src/main/java/com/company/example/FormatFactory.java[tags=source]
+include::../../../java/ch13-flyweight/ex01/src/main/java/com/company/example/FormatFactory.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch13-flyweight/ex01/src/test/java/com/company/example/FormatFactoryTest.java[tags=source]
+include::../../../java/ch13-flyweight/ex01/src/test/java/com/company/example/FormatFactoryTest.java[tags=source]
 ----
 
 === References in JDK

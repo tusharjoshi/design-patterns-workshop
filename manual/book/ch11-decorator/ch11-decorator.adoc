@@ -52,27 +52,27 @@ LoggerWrapper <-- Client
 
 [source,java]
 ----
-include::../../../ch11-decorator/ex01-logger/src/main/java/com/company/example/ILogger.java[tags=source]
+include::../../../java/ch11-decorator/ex01-logger/src/main/java/com/company/example/ILogger.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch11-decorator/ex01-logger/src/main/java/com/company/example/Logger.java[tags=source]
+include::../../../java/ch11-decorator/ex01-logger/src/main/java/com/company/example/Logger.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch11-decorator/ex01-logger/src/main/java/com/company/example/User.java[tags=source]
+include::../../../java/ch11-decorator/ex01-logger/src/main/java/com/company/example/User.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch11-decorator/ex01-logger/src/main/java/com/company/example/LoggerWrapper.java[tags=source]
+include::../../../java/ch11-decorator/ex01-logger/src/main/java/com/company/example/LoggerWrapper.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch11-decorator/ex01-logger/src/test/java/com/company/example/LoggerWrapperTest.java[tags=source]
+include::../../../java/ch11-decorator/ex01-logger/src/test/java/com/company/example/LoggerWrapperTest.java[tags=source]
 ----
 
 === Convenience Wrappers
@@ -102,17 +102,17 @@ LoggerWrapper <-- Client
 
 [source,java]
 ----
-include::../../../ch11-decorator/ex02-anti-corruption/src/main/java/com/company/example/LoggerV2.java[tags=source]
+include::../../../java/ch11-decorator/ex02-anti-corruption/src/main/java/com/company/example/LoggerV2.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch11-decorator/ex02-anti-corruption/src/main/java/com/company/example/LoggerWrapper.java[tags=source]
+include::../../../java/ch11-decorator/ex02-anti-corruption/src/main/java/com/company/example/LoggerWrapper.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch11-decorator/ex02-anti-corruption/src/test/java/com/company/example/LoggerWrapperTest.java[tags=source]
+include::../../../java/ch11-decorator/ex02-anti-corruption/src/test/java/com/company/example/LoggerWrapperTest.java[tags=source]
 ----
 
 === Decorator instances in JDK

@@ -24,7 +24,7 @@ Application --> Cache
 .Cache.java
 [source,java]
 ----
-include::../../../ch02-singleton/ex01-eager-initialization/src/main/java/com/example/Cache.java[]
+include::../../../java/ch02-singleton/ex01-eager-initialization/src/main/java/com/example/Cache.java[]
 ----
 
 === Lazy Loading with thread safety
@@ -33,7 +33,7 @@ include::../../../ch02-singleton/ex01-eager-initialization/src/main/java/com/exa
 .Cache.java
 [source,java]
 ----
-include::../../../ch02-singleton/ex02-lazy-loading/src/main/java/com/example/Cache.java[]
+include::../../../java/ch02-singleton/ex02-lazy-loading/src/main/java/com/example/Cache.java[]
 ----
 
 === Lazy Loading with Double Checked Locking
@@ -42,7 +42,7 @@ include::../../../ch02-singleton/ex02-lazy-loading/src/main/java/com/example/Cac
 .Cache.java
 [source,java]
 ----
-include::../../../ch02-singleton/ex03-double-check/src/main/java/com/example/Cache.java[]
+include::../../../java/ch02-singleton/ex03-double-check/src/main/java/com/example/Cache.java[]
 ----
 
 === Bill Pugh's Static Helper
@@ -51,7 +51,7 @@ include::../../../ch02-singleton/ex03-double-check/src/main/java/com/example/Cac
 .Cache.java
 [source,java]
 ----
-include::../../../ch02-singleton/ex04-static-helper/src/main/java/com/example/Cache.java[]
+include::../../../java/ch02-singleton/ex04-static-helper/src/main/java/com/example/Cache.java[]
 ----
 
 === Interface Based Implementation
@@ -60,7 +60,7 @@ include::../../../ch02-singleton/ex04-static-helper/src/main/java/com/example/Ca
 .Cache.java
 [source,java]
 ----
-include::../../../ch02-singleton/ex05-interface-based/src/main/java/com/example/Cache.java[]
+include::../../../java/ch02-singleton/ex05-interface-based/src/main/java/com/example/Cache.java[]
 ----
 
 === Spring Boot Version
@@ -69,13 +69,13 @@ include::../../../ch02-singleton/ex05-interface-based/src/main/java/com/example/
 .Cache.java
 [source,java]
 ----
-include::../../../ch02-singleton/ex06-springboot/src/main/java/com/example/Cache.java[]
+include::../../../java/ch02-singleton/ex06-springboot/src/main/java/com/example/Cache.java[]
 ----
 
 .AcceptList.java
 [source,java]
 ----
-include::../../../ch02-singleton/ex06-springboot/src/main/java/com/example/AcceptList.java[]
+include::../../../java/ch02-singleton/ex06-springboot/src/main/java/com/example/AcceptList.java[]
 ----
 
 === Singleton and Enum by Joshua Bloch

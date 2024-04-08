@@ -24,22 +24,22 @@ Rectangle <-- Client
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s03-liskov-substitution/ex01-rectangle/src/main/java/com/company/example/Rectangle.java[tags=source]
+include::../../../../java/ch01-solid-principles/s03-liskov-substitution/ex01-rectangle/src/main/java/com/company/example/Rectangle.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s03-liskov-substitution/ex01-rectangle/src/main/java/com/company/example/Square.java[tags=source]
+include::../../../../java/ch01-solid-principles/s03-liskov-substitution/ex01-rectangle/src/main/java/com/company/example/Square.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s03-liskov-substitution/ex01-rectangle/src/main/java/com/company/example/AreaCalculator.java[tags=source]
+include::../../../../java/ch01-solid-principles/s03-liskov-substitution/ex01-rectangle/src/main/java/com/company/example/AreaCalculator.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s03-liskov-substitution/ex01-rectangle/src/test/java/com/company/example/AreaCalculatorTest.java[tags=source]
+include::../../../../java/ch01-solid-principles/s03-liskov-substitution/ex01-rectangle/src/test/java/com/company/example/AreaCalculatorTest.java[tags=source]
 ----
 
 

@@ -39,12 +39,12 @@ DiscountCalculator <-- Application
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s02-open-close/ex01-switch-unclean/src/main/java/com/example/DiscountCalculator.java[tags=source]
+include::../../../../java/ch01-solid-principles/s02-open-close/ex01-switch-unclean/src/main/java/com/example/DiscountCalculator.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s02-open-close/ex01-switch-unclean/src/test/java/com/example/DiscountCalculatorTest.java[tags=source]
+include::../../../../java/ch01-solid-principles/s02-open-close/ex01-switch-unclean/src/test/java/com/example/DiscountCalculatorTest.java[tags=source]
 ----
 
 ==== Switch clean version
@@ -79,31 +79,31 @@ DiscountCalculator <-- Application
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/DiscountCalculator.java[tags=source]
+include::../../../../java/ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/DiscountCalculator.java[tags=source]
 ----
 <1> Get strategy object for given month
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/IDiscountStrategy.java[tags=source]
+include::../../../../java/ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/IDiscountStrategy.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/strategies/DiscountStrategyMap.java[tags=source]
+include::../../../../java/ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/strategies/DiscountStrategyMap.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/strategies/JanFebDiscountStrategy.java[tags=source]
+include::../../../../java/ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/strategies/JanFebDiscountStrategy.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/strategies/AugDiscountStrategy.java[tags=source]
+include::../../../../java/ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/strategies/AugDiscountStrategy.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/strategies/OtherDiscountStrategy.java[tags=source]
+include::../../../../java/ch01-solid-principles/s02-open-close/ex02-switch-clean/src/main/java/com/example/strategies/OtherDiscountStrategy.java[tags=source]
 ----

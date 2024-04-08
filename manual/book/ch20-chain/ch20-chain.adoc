@@ -56,45 +56,45 @@ Response <-- Client
 
 [source,java]
 ----
-include::../../../ch20-chain/ex01/src/main/java/com/company/example/Request.java[tags=source]
+include::../../../java/ch20-chain/ex01/src/main/java/com/company/example/Request.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch20-chain/ex01/src/main/java/com/company/example/Response.java[tags=source]
+include::../../../java/ch20-chain/ex01/src/main/java/com/company/example/Response.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch20-chain/ex01/src/main/java/com/company/example/IAuthenticator.java[tags=source]
+include::../../../java/ch20-chain/ex01/src/main/java/com/company/example/IAuthenticator.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch20-chain/ex01/src/main/java/com/company/example/AbstractAuthenticator.java[tags=source]
+include::../../../java/ch20-chain/ex01/src/main/java/com/company/example/AbstractAuthenticator.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch20-chain/ex01/src/main/java/com/company/example/CustomerAuthenticator.java[tags=source]
+include::../../../java/ch20-chain/ex01/src/main/java/com/company/example/CustomerAuthenticator.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch20-chain/ex01/src/main/java/com/company/example/EmployeeAuthenticator.java[tags=source]
+include::../../../java/ch20-chain/ex01/src/main/java/com/company/example/EmployeeAuthenticator.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch20-chain/ex01/src/main/java/com/company/example/NoUserAuthenticator.java[tags=source]
+include::../../../java/ch20-chain/ex01/src/main/java/com/company/example/NoUserAuthenticator.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch20-chain/ex01/src/main/java/com/company/example/LoginService.java[tags=source]
+include::../../../java/ch20-chain/ex01/src/main/java/com/company/example/LoginService.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch20-chain/ex01/src/test/java/com/company/example/LoginServiceTest.java[tags=source]
+include::../../../java/ch20-chain/ex01/src/test/java/com/company/example/LoginServiceTest.java[tags=source]
 ----

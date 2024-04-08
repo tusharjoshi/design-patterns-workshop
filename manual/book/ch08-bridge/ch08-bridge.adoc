@@ -84,40 +84,40 @@ IMessageFormatter <-- Application
 
 [source,java]
 ----
-include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/IMessageSender.java[tags=source]
+include::../../../java/ch08-bridge/ex02-bridge/src/main/java/com/company/example/IMessageSender.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/IMessageFormatter.java[tags=source]
+include::../../../java/ch08-bridge/ex02-bridge/src/main/java/com/company/example/IMessageFormatter.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/MessageSender.java[tags=source]
+include::../../../java/ch08-bridge/ex02-bridge/src/main/java/com/company/example/MessageSender.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/TextFormatter.java[tags=source]
+include::../../../java/ch08-bridge/ex02-bridge/src/main/java/com/company/example/TextFormatter.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/HTMLFormatter.java[tags=source]
+include::../../../java/ch08-bridge/ex02-bridge/src/main/java/com/company/example/HTMLFormatter.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/SMSSender.java[tags=source]
+include::../../../java/ch08-bridge/ex02-bridge/src/main/java/com/company/example/SMSSender.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch08-bridge/ex02-bridge/src/main/java/com/company/example/EmailSender.java[tags=source]
+include::../../../java/ch08-bridge/ex02-bridge/src/main/java/com/company/example/EmailSender.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch08-bridge/ex02-bridge/src/test/java/com/company/example/MessageSenderTest.java[tags=source]
+include::../../../java/ch08-bridge/ex02-bridge/src/test/java/com/company/example/MessageSenderTest.java[tags=source]
 ----

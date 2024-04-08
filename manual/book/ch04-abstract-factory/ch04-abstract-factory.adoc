@@ -51,42 +51,42 @@ Similarly another Factory implementation is made available which can be replaced
 
 [source,java]
 ----
-include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/Application.java[tags=source]
+include::../../../java/ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/Application.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IUIToolsFactory.java[tags=source]
+include::../../../java/ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IUIToolsFactory.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IMenuList.java[tags=source]
+include::../../../java/ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IMenuList.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IToolButton.java[tags=source]
+include::../../../java/ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IToolButton.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IShape.java[tags=source]
+include::../../../java/ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/IShape.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/factory/basic/BasicToolsFactory.java[tags=source]
+include::../../../java/ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/factory/basic/BasicToolsFactory.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/factory/advanced/AdvancedToolsFactory.java[tags=source]
+include::../../../java/ch04-abstract-factory/ex01-ui-tools-factory/src/main/java/com/example/factory/advanced/AdvancedToolsFactory.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch04-abstract-factory/ex01-ui-tools-factory/src/test/java/com/example/ApplicationTest.java[tags=source]
+include::../../../java/ch04-abstract-factory/ex01-ui-tools-factory/src/test/java/com/example/ApplicationTest.java[tags=source]
 ----
 
 === Separated Interface.footnote:[Pattern from Martin Fowlers Catalog of Patterns of Entreprise Application Architecture]

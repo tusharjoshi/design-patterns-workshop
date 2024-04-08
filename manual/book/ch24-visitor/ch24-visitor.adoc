@@ -46,40 +46,40 @@ ConcreteElementB <-- N2
 
 [source,java]
 ----
-include::../../../ch24-visitor/ex01/src/main/java/com/company/example/AbstractVisitor.java[tags=source]
+include::../../../java/ch24-visitor/ex01/src/main/java/com/company/example/AbstractVisitor.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch24-visitor/ex01/src/main/java/com/company/example/HTMLElement.java[tags=source]
+include::../../../java/ch24-visitor/ex01/src/main/java/com/company/example/HTMLElement.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch24-visitor/ex01/src/main/java/com/company/example/BodyElement.java[tags=source]
+include::../../../java/ch24-visitor/ex01/src/main/java/com/company/example/BodyElement.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch24-visitor/ex01/src/main/java/com/company/example/PElement.java[tags=source]
+include::../../../java/ch24-visitor/ex01/src/main/java/com/company/example/PElement.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch24-visitor/ex01/src/main/java/com/company/example/TextElement.java[tags=source]
+include::../../../java/ch24-visitor/ex01/src/main/java/com/company/example/TextElement.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch24-visitor/ex01/src/main/java/com/company/example/Markup.java[tags=source]
+include::../../../java/ch24-visitor/ex01/src/main/java/com/company/example/Markup.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch24-visitor/ex01/src/main/java/com/company/example/BasicVisitor.java[tags=source]
+include::../../../java/ch24-visitor/ex01/src/main/java/com/company/example/BasicVisitor.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch24-visitor/ex01/src/test/java/com/company/example/VisitorTest.java[tags=source]
+include::../../../java/ch24-visitor/ex01/src/test/java/com/company/example/VisitorTest.java[tags=source]
 ----

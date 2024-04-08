@@ -51,10 +51,10 @@ Markup <-- Client
 
 [source,java]
 ----
-include::../../../ch12-facade/ex01-markup/src/main/java/com/company/example/Markup.java[tags=source]
+include::../../../java/ch12-facade/ex01-markup/src/main/java/com/company/example/Markup.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch12-facade/ex01-markup/src/test/java/com/company/example/MarkupTest.java[tags=source]
+include::../../../java/ch12-facade/ex01-markup/src/test/java/com/company/example/MarkupTest.java[tags=source]
 ----

@@ -25,25 +25,25 @@ ConcreteCommand <.. Client
 
 [source,java]
 ----
-include::../../../ch19-command/ex01/src/main/java/com/company/example/Command.java[tags=source]
+include::../../../java/ch19-command/ex01/src/main/java/com/company/example/Command.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch19-command/ex01/src/main/java/com/company/example/Button.java[tags=source]
+include::../../../java/ch19-command/ex01/src/main/java/com/company/example/Button.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch19-command/ex01/src/main/java/com/company/example/Display.java[tags=source]
+include::../../../java/ch19-command/ex01/src/main/java/com/company/example/Display.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch19-command/ex01/src/main/java/com/company/example/Calculator.java[tags=source]
+include::../../../java/ch19-command/ex01/src/main/java/com/company/example/Calculator.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch19-command/ex01/src/test/java/com/company/example/CalculatorTest.java[tags=source]
+include::../../../java/ch19-command/ex01/src/test/java/com/company/example/CalculatorTest.java[tags=source]
 ----

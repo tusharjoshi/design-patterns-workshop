@@ -37,20 +37,20 @@ Calculator <--* Display
 
 [source,java]
 ----
-include::../../../ch18-mediator/ex01/src/main/java/com/company/example/Display.java[tags=source]
+include::../../../java/ch18-mediator/ex01/src/main/java/com/company/example/Display.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch18-mediator/ex01/src/main/java/com/company/example/Button.java[tags=source]
+include::../../../java/ch18-mediator/ex01/src/main/java/com/company/example/Button.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch18-mediator/ex01/src/main/java/com/company/example/Calculator.java[tags=source]
+include::../../../java/ch18-mediator/ex01/src/main/java/com/company/example/Calculator.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch18-mediator/ex01/src/test/java/com/company/example/CalculatorTest.java[tags=source]
+include::../../../java/ch18-mediator/ex01/src/test/java/com/company/example/CalculatorTest.java[tags=source]
 ----

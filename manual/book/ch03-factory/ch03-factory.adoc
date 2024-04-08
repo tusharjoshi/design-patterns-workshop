@@ -37,32 +37,32 @@ Rectangle <-- BasicShapeFactory
 
 [source,java]
 ----
-include::../../../ch03-factory/ex01-basic-factory/src/main/java/com/example/IShape.java[tags=source]
+include::../../../java/ch03-factory/ex01-basic-factory/src/main/java/com/example/IShape.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch03-factory/ex01-basic-factory/src/main/java/com/example/IShapeFactory.java[tags=source]
+include::../../../java/ch03-factory/ex01-basic-factory/src/main/java/com/example/IShapeFactory.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch03-factory/ex01-basic-factory/src/main/java/com/example/Circle.java[tags=source]
+include::../../../java/ch03-factory/ex01-basic-factory/src/main/java/com/example/Circle.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch03-factory/ex01-basic-factory/src/main/java/com/example/Rectangle.java[tags=source]
+include::../../../java/ch03-factory/ex01-basic-factory/src/main/java/com/example/Rectangle.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch03-factory/ex01-basic-factory/src/main/java/com/example/BasicShapeFactory.java[tags=source]
+include::../../../java/ch03-factory/ex01-basic-factory/src/main/java/com/example/BasicShapeFactory.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch03-factory/ex01-basic-factory/src/test/java/com/example/BasicShapeFactoryTest.java[tags=source]
+include::../../../java/ch03-factory/ex01-basic-factory/src/test/java/com/example/BasicShapeFactoryTest.java[tags=source]
 ----
 
 === Loose Coupling
@@ -73,7 +73,7 @@ Factory pattern can help achieve loose coupling between components.
 
 [source,java]
 ----
-include::../../../ch03-factory/ex02-loose-coupling/src/main/java/com/example/IAuditor.java[tags=source]
+include::../../../java/ch03-factory/ex02-loose-coupling/src/main/java/com/example/IAuditor.java[tags=source]
 ----
 
 The `AuditorFactory` class decides which concrete Auditor class to instantiate.  This separates the decision of which Auditor to use from the actual calling components.
@@ -82,7 +82,7 @@ The decision of choosing a specific auditor can be externalized as a property de
 
 [source,java]
 ----
-include::../../../ch03-factory/ex02-loose-coupling/src/main/java/com/example/AuditorFactory.java[tags=source]
+include::../../../java/ch03-factory/ex02-loose-coupling/src/main/java/com/example/AuditorFactory.java[tags=source]
 ----
 
 === Encapsulation using Factory
@@ -91,12 +91,12 @@ Factory can encapsulate complex logic of building the service.  The logic of cre
 
 [source,java]
 ----
-include::../../../ch03-factory/ex03-encapsulation/src/main/java/com/example/ClaimCalculatorFactory.java[tags=source]
+include::../../../java/ch03-factory/ex03-encapsulation/src/main/java/com/example/ClaimCalculatorFactory.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch03-factory/ex03-encapsulation/src/main/java/com/example/ClaimCreator.java[tags=source]
+include::../../../java/ch03-factory/ex03-encapsulation/src/main/java/com/example/ClaimCreator.java[tags=source]
 ----
 
 === Factory instances in JDK

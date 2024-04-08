@@ -38,32 +38,32 @@ Application --> VertexCalculator
 
 [source,java]
 ----
-include::../../../ch07-adapter/ex01/library/src/main/java/com/library/Polygon.java[tags=source]
+include::../../../java/ch07-adapter/ex01/library/src/main/java/com/library/Polygon.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch07-adapter/ex01/library/src/main/java/com/library/VertexCalculator.java[tags=source]
+include::../../../java/ch07-adapter/ex01/library/src/main/java/com/library/VertexCalculator.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch07-adapter/ex01/example/src/main/java/com/company/example/Polyline.java[tags=source]
+include::../../../java/ch07-adapter/ex01/example/src/main/java/com/company/example/Polyline.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch07-adapter/ex01/example/src/main/java/com/company/example/PolygonAdapter.java[tags=source]
+include::../../../java/ch07-adapter/ex01/example/src/main/java/com/company/example/PolygonAdapter.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch07-adapter/ex01/example/src/main/java/com/company/example/Application.java[tags=source]
+include::../../../java/ch07-adapter/ex01/example/src/main/java/com/company/example/Application.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch07-adapter/ex01/example/src/test/java/com/company/example/ApplicationTest.java[tags=source]
+include::../../../java/ch07-adapter/ex01/example/src/test/java/com/company/example/ApplicationTest.java[tags=source]
 ----
 
 === Adapter instances in JDK

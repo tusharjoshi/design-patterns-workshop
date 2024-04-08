@@ -9,7 +9,7 @@ This example violates the single responsibility principle by doing everything at
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s01-single-responsibility/ex01-all-in-one/src/main/java/com/company/example/Main.java[tags=source]
+include::../../../../java/ch01-solid-principles/s01-single-responsibility/ex01-all-in-one/src/main/java/com/company/example/Main.java[tags=source]
 ----
 
 ==== Modular Design with Single Responsibility
@@ -18,26 +18,26 @@ Separating the responsibilities into multiple components not only abides by sing
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/main/java/com/company/example/Greeter.java[tags=source]
+include::../../../../java/ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/main/java/com/company/example/Greeter.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/main/java/com/company/example/NameProvider.java[tags=source]
+include::../../../../java/ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/main/java/com/company/example/NameProvider.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/main/java/com/company/example/MessageDisplayer.java[tags=source]
+include::../../../../java/ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/main/java/com/company/example/MessageDisplayer.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/main/java/com/company/example/Main.java[tags=source]
+include::../../../../java/ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/main/java/com/company/example/Main.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/test/java/com/company/example/GreeterTest.java[tags=source]
+include::../../../../java/ch01-solid-principles/s01-single-responsibility/ex02-single-reponsibility/src/test/java/com/company/example/GreeterTest.java[tags=source]
 ----
 

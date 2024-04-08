@@ -36,32 +36,32 @@ Order <-- Application
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/ICRUDProvider.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/ICRUDProvider.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/CachingCRUDProvider.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/CachingCRUDProvider.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/Order.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/Order.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/OrderProvider.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/OrderProvider.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/OrderController.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/main/java/com/company/example/OrderController.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/test/java/com/company/example/OrderControllerTest.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-with-segregation/src/test/java/com/company/example/OrderControllerTest.java[tags=source]
 ----
 
 ==== Example with ISP
@@ -105,41 +105,41 @@ Order <-- Application
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/ICreator.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/ICreator.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/IReader.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/IReader.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/IUpdater.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/IUpdater.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/IDeleter.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/IDeleter.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/CachingReader.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/CachingReader.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/OrderProvider.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/OrderProvider.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/OrderController.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/main/java/com/company/example/OrderController.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../../ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/test/java/com/company/example/OrderControllerTest.java[tags=source]
+include::../../../../java/ch01-solid-principles/s04-interface-segregation/ex01-without-segregation/src/test/java/com/company/example/OrderControllerTest.java[tags=source]
 ----
 

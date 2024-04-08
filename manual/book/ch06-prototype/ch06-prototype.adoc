@@ -31,22 +31,22 @@ VocabularyStoreFactory <-- Application
 (((Prototype, Vocabulary Store Example)))
 [source,java]
 ----
-include::../../../ch06-prototype/ex01/src/main/java/com/example/IVocabularyStore.java[tags=source]
+include::../../../java/ch06-prototype/ex01/src/main/java/com/example/IVocabularyStore.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch06-prototype/ex01/src/main/java/com/example/DefaultVocabularyStore.java[tags=source]
+include::../../../java/ch06-prototype/ex01/src/main/java/com/example/DefaultVocabularyStore.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch06-prototype/ex01/src/main/java/com/example/VocabularyStoreFactory.java[tags=source]
+include::../../../java/ch06-prototype/ex01/src/main/java/com/example/VocabularyStoreFactory.java[tags=source]
 ----
 
 [source,java]
 ----
-include::../../../ch06-prototype/ex01/src/test/java/com/example/VocabularyStoreFactoryTest.java[tags=source]
+include::../../../java/ch06-prototype/ex01/src/test/java/com/example/VocabularyStoreFactoryTest.java[tags=source]
 ----
 
 === Prototype instances in JDK
