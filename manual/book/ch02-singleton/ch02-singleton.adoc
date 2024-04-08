@@ -94,6 +94,18 @@ public enum Cache {
 }
 ----
 
+=== Singleton example in Go
+
+[source, go, linenums]
+----
+include::../../../go/ch02-singleton/main.go[]
+----
+
+[source, go, linenums]
+----
+include::../../../go/ch02-singleton/cache/cache.go[]
+----
+
 === Singleton and reflection
 
 (((Singleton, Reflection)))
