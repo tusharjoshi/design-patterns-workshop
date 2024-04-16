@@ -22,7 +22,7 @@ func GetInstance[T any]() *Cache[any] {
 		instance = &Cache[any]{
 			items: make(map[string]interface{}),
 		}
-		log.Info().Msg(fmt.Sprintf("Cache instance created for type %T\n", *new(T)))
+		log.Info().Msg(fmt.Sprintf("Cache instance created for type %T", *new(T)))
 	})
 	return instance
 }
