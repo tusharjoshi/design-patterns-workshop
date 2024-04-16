@@ -8,6 +8,6 @@ The concept discussed in this workshop are language agnostic.  The source code e
 
 The following are the prerequisites for building the source code
 
-1. [Java 14](https://openjdk.java.net/projects/jdk/14/)
+1. Java 17
 2. [Gradle](https://gradle.org/)
 3. [Gng](https://github.com/gdubw/gng) (convinience helper to run graddle wrapper from any sub directory)
