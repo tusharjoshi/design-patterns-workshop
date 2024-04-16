@@ -25,4 +25,4 @@
 * https://jeffreykegler.github.io/Ocean-of-Awareness-blog/individual/2013/03/interpreter.html[About Interpreter Pattern and its difficult nature.]
 * http://www.mcdonaldland.info/files/designpatterns/designpatternscard.pdf[Design Patterns Cheatsheet] by http://www.McDonaldLand.info[Jason S. McDonald]
 * https://www.oodesign.com/[Design pattern examples at OODesign.com]
-
+* https://holub.com/goodies/holub_design_patterns.pdf[Allen Holub Design Patterns Reference PDF]
