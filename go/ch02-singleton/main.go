@@ -28,7 +28,6 @@ func main() {
 	waitGroup := sync.WaitGroup{}
 	for i := 0; i < 5; i++ {
 		waitGroup.Add(1)
-		i := i // to overcome loopclosure for Go < 1.22
 		go func() {
 			defer waitGroup.Done()
 			process(i)
