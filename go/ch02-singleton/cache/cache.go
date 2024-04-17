@@ -18,13 +18,21 @@ var (
 )
 
 func GetInstance[T any]() *Cache[any] {
-	once.Do(func() {
-		instance = &Cache[any]{
-			items: make(map[string]interface{}),
-		}
-		log.Info().Msg(fmt.Sprintf("Cache instance created for type %T", *new(T)))
-	})
+	// once.Do(func() {
+	// 	instance = &Cache[any]{
+	// 		items: make(map[string]interface{}),
+	// 	}
+	// 	log.Info().Msg(fmt.Sprintf("Cache instance created for type %T", *new(T)))
+	// })
+	once.Do(createCacheInstance[T])
 	return instance
+}
+
+func createCacheInstance[T any]() {
+	instance = &Cache[any]{
+		items: make(map[string]interface{}),
+	}
+	log.Info().Msg(fmt.Sprintf("Cache instance created for type %T", *new(T)))
 }
 
 func (c *Cache[T]) Set(key string, value T) {
