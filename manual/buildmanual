@@ -1,0 +1,6 @@
+#!/bin/ash
+
+cd manual
+asciidoctor-pdf -r asciidoctor-diagram -a index -D ./build book/design-patterns-workshop.adoc 
+# asciidoctor-epub3 -r asciidoctor-diagram -a index -D ./build book/design-patterns-workshop.adoc 
+asciidoctor -r asciidoctor-diagram -D ./build -a data-uri book/design-patterns-workshop.adoc 

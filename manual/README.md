@@ -18,19 +18,8 @@ podman pull --platform linux/arm64 docker.io/asciidoctor/docker-asciidoctor # Ap
 podman pull docker.io/asciidoctor/docker-asciidoctor
 ```
 
-### Start the container
-
-Ensure you start the container from the root directory of this project, that will mean `manual` folder is available in the listing
+### Build manual using podman container
 
 ```bash
-podman run -it -v $(pwd):/documents/ docker.io/asciidoctor/docker-asciidoctor
-```
-
-### Use the following commands to generate books in the container
-
-```bash
-cd manual
-asciidoctor-pdf -r asciidoctor-diagram -a index -D ./build book/design-patterns-workshop.adoc 
-asciidoctor-epub3 -r asciidoctor-diagram -a index -D ./build book/design-patterns-workshop.adoc 
-asciidoctor -r asciidoctor-diagram -D ./build -a data-uri book/design-patterns-workshop.adoc 
+./manual/podmanbuild.sh
 ```
