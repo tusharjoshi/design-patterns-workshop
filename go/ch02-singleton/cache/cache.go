@@ -8,7 +8,7 @@ import (
 )
 
 type Cache[T any] struct {
-	mu    sync.RWMutex
+	mutex sync.RWMutex
 	items map[string]interface{}
 }
 
@@ -17,17 +17,6 @@ var (
 	once     sync.Once
 )
 
-func GetInstance[T any]() *Cache[any] {
-	// once.Do(func() {
-	// 	instance = &Cache[any]{
-	// 		items: make(map[string]interface{}),
-	// 	}
-	// 	log.Info().Msg(fmt.Sprintf("Cache instance created for type %T", *new(T)))
-	// })
-	once.Do(createCacheInstance[T])
-	return instance
-}
-
 func createCacheInstance[T any]() {
 	instance = &Cache[any]{
 		items: make(map[string]interface{}),
@@ -35,15 +24,20 @@ func createCacheInstance[T any]() {
 	log.Info().Msg(fmt.Sprintf("Cache instance created for type %T", *new(T)))
 }
 
+func GetInstance[T any]() *Cache[any] {
+	once.Do(createCacheInstance[T])
+	return instance
+}
+
 func (c *Cache[T]) Set(key string, value T) {
-	c.mu.Lock()
-	defer c.mu.Unlock()
+	c.mutex.Lock()
+	defer c.mutex.Unlock()
 	c.items[key] = value
 }
 
 func (c *Cache[T]) Get(key string) (T, bool) {
-	c.mu.RLock()
-	defer c.mu.RUnlock()
-	val, exists := c.items[key]
-	return val.(T), exists
+	c.mutex.RLock()
+	defer c.mutex.RUnlock()
+	value, exists := c.items[key]
+	return value.(T), exists
 }
