@@ -1,0 +1,35 @@
+=== Singleton example in Go
+
+TBD
+
+[plantuml, singleton, png]
+----
+package cache {
+    interface Cache 
+    class cache 
+    
+    class functions {
+      +GetInstance(): Cache
+    }
+
+    cache ..|> Cache
+    functions --> cache
+}
+
+package main {
+    class main
+}
+
+main.main --> Cache
+main.main --> functions
+----
+
+[source, go, linenums]
+----
+include::../../../go/ch02-singleton/cache/cache.go[]
+----
+
+[source, go, linenums]
+----
+include::../../../go/ch02-singleton/main.go[]
+----
