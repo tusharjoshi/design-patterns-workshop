@@ -52,6 +52,8 @@ func (c *cache[T]) Get(key string) (value T, exists bool) {
 	c.mutex.RLock()
 	defer c.mutex.RUnlock()
 	rawValue, exists := c.items[key]
-	value = rawValue.(T)
+	if exists {
+		value = rawValue.(T)
+	}
 	return value, exists
 }
