@@ -14,17 +14,24 @@ Using the asciidoctor framework and its plugins the content of this manual sourc
 
 === How to build the manual
 
-The manual building step needs ruby to be installed on your system.  There are Gradle plugins to achieve the same thing and the source can be updated to Gradle build and any help PR is welcome in that area.
-
-To build the manual assuming ruby is already installed on system follow the following steps
+==== Ensure podman machine is having access to user home
 
 [source, bash]
 ----
-cd manual # <1>
-bundle install # <2>
-bundle exec rake book:build # <3>
+podman machine init --cpus=4 --disk-size=60 --memory=6096 -v $HOME:$HOME
 ----
 
-<1> change directory to manual directory
-<2> install all the dependencies
-<3> build the manual in build folder
+==== Pull the image for use
+
+[source, bash]
+----
+podman pull --platform linux/arm64 docker.io/asciidoctor/docker-asciidoctor # Apple M1 arm64
+podman pull docker.io/asciidoctor/docker-asciidoctor
+----
+
+==== Build manual using podman container
+
+[source, bash]
+----
+./manual/podmanbuild.sh
+----
