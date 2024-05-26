@@ -8,6 +8,7 @@ Tushar Joshi <tusharvjoshi@gmail.com>
 :source-highlighter: rouge
 :pagenums:
 :imagesdir: images
+:imagesoutdir: manual/book/images
 :front-cover-image: image:cover.png[width=1050,height=1600]
 :icons: font
 
