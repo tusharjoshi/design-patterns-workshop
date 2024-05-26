@@ -25,7 +25,7 @@ jobs:
       uses: manoelcampos/asciidoctor-ghpages-action@v2
       with:
         pdf_build: true
-        asciidoctor_params: -r asciidoctor-diagram --imagesoutdir=images
+        asciidoctor_params: -r asciidoctor-diagram
         ebook_main_adoc_file: manual/book/design-patterns-workshop
         # asciidoctor_params: --attribute=nofooter
         # adoc_file_ext: .ascii # default is .adoc
