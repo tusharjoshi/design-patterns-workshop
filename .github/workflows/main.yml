@@ -27,6 +27,7 @@ jobs:
         pdf_build: true
         asciidoctor_params: -r asciidoctor-diagram
         ebook_main_adoc_file: manual/book/design-patterns-workshop
+        post_build: git add .
         # asciidoctor_params: --attribute=nofooter
         # adoc_file_ext: .ascii # default is .adoc
         # source_dir: docs/ # default is .
