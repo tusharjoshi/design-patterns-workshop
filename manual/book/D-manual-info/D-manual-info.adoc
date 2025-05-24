@@ -14,24 +14,7 @@ Using the asciidoctor framework and its plugins the content of this manual sourc
 
 === How to build the manual
 
-==== Ensure podman machine is having access to user home
-
 [source, bash]
 ----
-podman machine init --cpus=4 --disk-size=60 --memory=6096 -v $HOME:$HOME
-----
-
-==== Pull the image for use
-
-[source, bash]
-----
-podman pull --platform linux/arm64 docker.io/asciidoctor/docker-asciidoctor # Apple M1 arm64
-podman pull docker.io/asciidoctor/docker-asciidoctor
-----
-
-==== Build manual using podman container
-
-[source, bash]
-----
-./manual/podmanbuild.sh
+./manual/dockerbuild.sh
 ----
